@@ -72,7 +72,7 @@
         HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX,
         HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, 
         HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction);
-    void Save();
+    void Save(int Act, int HouseUpgrade);
     void Load();
     
     int main()
@@ -454,6 +454,7 @@
                 if(*HouseUpgrade == 0)
                 {
                     *HouseUpgrade = 1;
+                    Save(*Act, *HouseUpgrade);
                 }
             }
             if(*HouseUpgradeSelect == 2)
@@ -461,6 +462,7 @@
                 if(*HouseUpgrade == 1)
                 {
                     *HouseUpgrade = 2;
+                    Save(*Act, *HouseUpgrade);
                 }
             }
             if(*HouseUpgradeSelect == 3)
@@ -468,14 +470,40 @@
                 if(*HouseUpgrade == 2)
                 {
                     *HouseUpgrade = 3;
+                    Save(*Act, *HouseUpgrade);
                 }
             }
         }
+
+        if(UpgradeBack.IsClicked(*Layout))
+        {
+            txSetFillColor(RGB(0, 0, 0));
+            txSetColor(RGB(0, 0, 0));
+            txClear();
+            *BackgroundX1 = 1296; 
+            *BackgroundX2 = 2592;
+            Sleep(500);
+            *Layout = 1;
+            *MenuStage = 1;
+            *HouseUpgradeSelect = 1;
+            txSetFillColor(RGB(255, 255, 255));
+            txSetColor(RGB(255, 255, 255));
+        }
     }
 
-    void Save()
+    void Save(int Act, int HouseUpgrade)
     {
+        FILE *Save;
+        char ActText[LEN];
+        char HouseUpgradeText[LEN];
 
+        itoa(Act, ActText, 10);
+        itoa(HouseUpgrade, HouseUpgradeText, 10);
+    
+
+        Save = fopen("Resources\\Saving.txt", "w");
+        fputs(strcat(strcat(ActText, "_"), HouseUpgradeText), Save);
+        fclose(Save);
     }
 
     void Load()
