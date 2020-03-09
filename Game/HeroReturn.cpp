@@ -16,22 +16,23 @@
             int Layout;
 
         public:
-            Button(int valueFirstX, int valueFirstY, int valueSecondX, int valueSecondY)
+            Button(int valueFirstX, int valueFirstY, int valueSecondX, int valueSecondY, int valueLayout)
             {
                 firstX = valueFirstX; 
                 firstY = valueFirstY;
                 secondX = valueSecondX; 
                 secondY = valueSecondY;
+                Layout = valueLayout;
             }
 
-            bool IsClicked(int int valueLayout)
+            bool IsClicked(int valueLayout1)
             {
                 RECT Collision = {firstX, firstY, secondX, secondY};
                 if(GetAsyncKeyState(VK_LBUTTON))
                 {
                     if(In(txMousePos(), Collision))
                     {   
-                        if(Layout == valueLayout)
+                        if(Layout == valueLayout1)
                         {
                             return TRUE;
                         }
@@ -340,140 +341,135 @@
             }
         }
         
-        if (NewGame.IsClicked())
+        if (NewGame.IsClicked(*Layout))
         {
-            if (*Layout == 0)
+            if(*BackgroundX1 == 1290)
             {
-                if(*BackgroundX1 == 1290)
+                txSetFillColor(RGB(0, 0, 0));
+                txSetColor(RGB(0, 0, 0));
+                txClear();
+                *BackgroundX1 = 1296; 
+                *BackgroundX2 = 2592;
+                Sleep(500);
+                *Layout = 1;
+                *MenuStage = 1;
+                txSetFillColor(RGB(255, 255, 255));
+                txSetColor(RGB(255, 255, 255));
+            }
+        }
+
+        if (Left.IsClicked(*Layout))
+        {
+            if(*MenuStage == 1 or *MenuStage == 2)
+            {
+                *MapMove = 1;
+                for(int i=0; i<129; i++)
                 {
-                    txSetFillColor(RGB(0, 0, 0));
-                    txSetColor(RGB(0, 0, 0));
-                    txClear();
-                    *BackgroundX1 = 1296; 
-                    *BackgroundX2 = 2592;
-                    Sleep(500);
-                    *Layout = 1;
-                    *MenuStage = 1;
-                    txSetFillColor(RGB(255, 255, 255));
-                    txSetColor(RGB(255, 255, 255));
+                    *BackgroundX1 = *BackgroundX1-10;
+                    *BackgroundX2 = *BackgroundX2-10;
+
+                    txBegin();
+                    Painting(*Layout, *Act, *HouseUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction);
+                    txEnd();
+                }
+                *MenuStage = *MenuStage-1;
+                Sleep(500);
+                *MapMove = 0;
+            }
+        }
+
+        if (Right.IsClicked(*Layout))
+        {
+            if(*MenuStage == 0 or *MenuStage == 1)
+            {
+                *MapMove = 1;
+                for(int i=0; i<129; i++)
+                {
+                    *BackgroundX1 = *BackgroundX1+10;
+                    *BackgroundX2 = *BackgroundX2+10;
+
+                    txBegin();
+                    Painting(*Layout, *Act, *HouseUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction);
+                    txEnd();
+                }
+                *MenuStage = *MenuStage+1;
+                Sleep(500);
+                *MapMove = 0;
+            }
+        }
+
+        if(Smithy.IsClicked(*Layout))
+        {
+            if(*MenuStage == 0)
+            {
+                txSetFillColor(RGB(0, 0, 0));
+                txSetColor(RGB(0, 0, 0));
+                txClear();
+                *BackgroundX1 = 0; 
+                *BackgroundX2 = 1296;
+                Sleep(500);
+                *Layout = 2;
+                *MenuStage = 1;
+                txSetFillColor(RGB(255, 255, 255));
+                txSetColor(RGB(255, 255, 255));
+            }
+        }
+
+        if(Upgrade.IsClicked(*Layout))
+        {
+            if(*MenuStage == 1)
+            {
+                txSetFillColor(RGB(0, 0, 0));
+                txSetColor(RGB(0, 0, 0));
+                txClear();
+                *BackgroundX1 = 0; 
+                *BackgroundX2 = 1296;
+                Sleep(500);
+                *Layout = 3;
+                *MenuStage = 0;
+                txSetFillColor(RGB(255, 255, 255));
+                txSetColor(RGB(255, 255, 255));
+            }
+        }
+
+        if(UpgradeFirstLvl.IsClicked(*Layout))
+        {
+            *HouseUpgradeSelect = 1;
+        }
+
+        if(UpgradeSecondLvl.IsClicked(*Layout))
+        {
+            *HouseUpgradeSelect = 2;
+        }
+
+        if(UpgradeThirdLvl.IsClicked(*Layout))
+        {
+            *HouseUpgradeSelect = 3;
+        }
+
+        if(Upgr.IsClicked(*Layout))
+        {
+            if(*HouseUpgradeSelect == 1)
+            {
+                if(*HouseUpgrade == 0)
+                {
+                    *HouseUpgrade = 1;
                 }
             }
-        }
-
-        if (Left.IsClicked())
-        {
-            if (*Layout == 1)
+            if(*HouseUpgradeSelect == 2)
             {
-                if(*MenuStage == 1 or *MenuStage == 2)
+                if(*HouseUpgrade == 1)
                 {
-                    *MapMove = 1;
-                    for(int i=0; i<129; i++)
-                    {
-                        *BackgroundX1 = *BackgroundX1-10;
-                        *BackgroundX2 = *BackgroundX2-10;
-
-                        txBegin();
-                        Painting(*Layout, *Act, *HouseUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction);
-                        txEnd();
-                    }
-                    *MenuStage = *MenuStage-1;
-                    Sleep(500);
-                    *MapMove = 0;
+                    *HouseUpgrade = 2;
                 }
             }
-        }
-
-        if (Right.IsClicked())
-        {
-            if (*Layout == 1)
+            if(*HouseUpgradeSelect == 3)
             {
-                if(*MenuStage == 0 or *MenuStage == 1)
+                if(*HouseUpgrade == 2)
                 {
-                    *MapMove = 1;
-                    for(int i=0; i<129; i++)
-                    {
-                        *BackgroundX1 = *BackgroundX1+10;
-                        *BackgroundX2 = *BackgroundX2+10;
-
-                        txBegin();
-                        Painting(*Layout, *Act, *HouseUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction);
-                        txEnd();
-                    }
-                    *MenuStage = *MenuStage+1;
-                    Sleep(500);
-                    *MapMove = 0;
+                    *HouseUpgrade = 3;
                 }
             }
-        }
-
-        if(Smithy.IsClicked())
-        {
-            if (*Layout == 1)
-            {
-                if(*MenuStage == 0)
-                {
-                    txSetFillColor(RGB(0, 0, 0));
-                    txSetColor(RGB(0, 0, 0));
-                    txClear();
-                    *BackgroundX1 = 0; 
-                    *BackgroundX2 = 1296;
-                    Sleep(500);
-                    *Layout = 2;
-                    *MenuStage = 1;
-                    txSetFillColor(RGB(255, 255, 255));
-                    txSetColor(RGB(255, 255, 255));
-                }
-            }
-        }
-
-        if(Upgrade.IsClicked())
-        {
-            if (*Layout == 1)
-            {
-                if(*MenuStage == 1)
-                {
-                    txSetFillColor(RGB(0, 0, 0));
-                    txSetColor(RGB(0, 0, 0));
-                    txClear();
-                    *BackgroundX1 = 0; 
-                    *BackgroundX2 = 1296;
-                    Sleep(500);
-                    *Layout = 3;
-                    *MenuStage = 0;
-                    txSetFillColor(RGB(255, 255, 255));
-                    txSetColor(RGB(255, 255, 255));
-                }
-            }
-        }
-
-        if(UpgradeFirstLvl.IsClicked())
-        {
-            if (*Layout == 3)
-            {
-                *HouseUpgradeSelect = 1;
-            }
-        }
-
-        if(UpgradeSecondLvl.IsClicked())
-        {
-            if (*Layout == 3)
-            {
-                *HouseUpgradeSelect = 2;
-            }
-        }
-
-        if(UpgradeThirdLvl.IsClicked())
-        {
-            if (*Layout == 3)
-            {
-                *HouseUpgradeSelect = 3;
-            }
-        }
-
-        if(Upgr.IsClicked())
-        {
-            if (*Layout == 3)
-            {
         }
     }
 
