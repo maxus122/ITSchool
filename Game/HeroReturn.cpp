@@ -161,7 +161,7 @@
         Button GameFifthAction(744, 630, 833, 719, 5);
         Button GameSixthAction(837, 630, 926, 719, 5);
 
-Load(&Act, &HouseUpgrade);
+        Load(&Act, &HouseUpgrade);
         
         while(TRUE)
         {
@@ -538,15 +538,18 @@ Load(&Act, &HouseUpgrade);
             Save(*Act, *HouseUpgrade);
         }
 
-        if(GetAsyncKeyState('Q'))
+        if(MapBack.IsClicked(*Layout))
         {
-            printf("%i", *Act);
-            Sleep(100);
-        }
-        if(GetAsyncKeyState('E'))
-        {
-            printf("%i", *Layout);
-            Sleep(100);
+            txSetFillColor(RGB(0, 0, 0));
+            txSetColor(RGB(0, 0, 0));
+            txClear();
+            *BackgroundX1 = 1296; 
+            *BackgroundX2 = 2592;
+            Sleep(500);
+            *Layout = 1;
+            *MenuStage = 1;
+            txSetFillColor(RGB(255, 255, 255));
+            txSetColor(RGB(255, 255, 255));
         }
     }
 
@@ -559,7 +562,6 @@ Load(&Act, &HouseUpgrade);
         itoa(Act, ActText, 10);
         itoa(HouseUpgrade, HouseUpgradeText, 10);
     
-
         Save = fopen("Resources\\Saving.txt", "w");
         fputs(strcat(strcat(ActText, "_"), HouseUpgradeText), Save);
         fclose(Save);
@@ -575,7 +577,4 @@ Load(&Act, &HouseUpgrade);
         
         *Act = atoi(strtok(LoadText, "_"));
         *HouseUpgrade = atoi(strtok(NULL, "_"));
-               
-        printf("%i", *Act);
-        printf("%i", *HouseUpgrade);
     }
