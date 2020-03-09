@@ -13,7 +13,7 @@
             int firstY;
             int secondX;
             int secondY;
-            int Layout;
+            int layout;
 
         public:
             Button(int valueFirstX, int valueFirstY, int valueSecondX, int valueSecondY, int valueLayout)
@@ -22,7 +22,7 @@
                 firstY = valueFirstY;
                 secondX = valueSecondX; 
                 secondY = valueSecondY;
-                Layout = valueLayout;
+                layout = valueLayout;
             }
 
             bool IsClicked(int valueLayout1)
@@ -31,10 +31,12 @@
                 if(GetAsyncKeyState(VK_LBUTTON))
                 {
                     if(In(txMousePos(), Collision))
-                    {   
-                        if(Layout == valueLayout1)
+                    {  
+                        if(layout == valueLayout1)
                         {
-                            return TRUE;
+                            return true;
+                        }else{
+                            return false;
                         }
                     }
                 }
@@ -160,7 +162,7 @@
         Button GameSixthAction(837, 630, 926, 719, 5);
 
 Load(&Act, &HouseUpgrade);
-
+        
         while(TRUE)
         {
             if(Layout == 1)
@@ -491,6 +493,61 @@ Load(&Act, &HouseUpgrade);
             txSetFillColor(RGB(255, 255, 255));
             txSetColor(RGB(255, 255, 255));
         }
+
+        if(Map.IsClicked(*Layout))
+        {
+            txSetFillColor(RGB(0, 0, 0));
+            txSetColor(RGB(0, 0, 0));
+            txClear();
+            *BackgroundX1 = 0; 
+            *BackgroundX2 = 1296;
+            Sleep(500);
+            *Layout = 4;
+            *MenuStage = 0;
+            txSetFillColor(RGB(255, 255, 255));
+            txSetColor(RGB(255, 255, 255));
+        }
+
+        if(XFirstAct.IsClicked(*Layout))
+        {
+            *Act = 2;
+            Save(*Act, *HouseUpgrade);
+        }
+
+        if(XSecondAct.IsClicked(*Layout))
+        {
+            *Act = 3;
+            Save(*Act, *HouseUpgrade);
+        }
+
+        if(XThirdAct.IsClicked(*Layout))
+        {
+            *Act = 4;
+            Save(*Act, *HouseUpgrade);
+        }
+
+        if(XFourthAct.IsClicked(*Layout))
+        {
+            *Act = 5;
+            Save(*Act, *HouseUpgrade);
+        }
+
+        if(XFifthAct.IsClicked(*Layout))
+        {
+            *Act = 6;
+            Save(*Act, *HouseUpgrade);
+        }
+
+        if(GetAsyncKeyState('Q'))
+        {
+            printf("%i", *Act);
+            Sleep(100);
+        }
+        if(GetAsyncKeyState('E'))
+        {
+            printf("%i", *Layout);
+            Sleep(100);
+        }
     }
 
     void Save(int Act, int HouseUpgrade)
@@ -519,7 +576,6 @@ Load(&Act, &HouseUpgrade);
         *Act = atoi(strtok(LoadText, "_"));
         *HouseUpgrade = atoi(strtok(NULL, "_"));
                
-        
         printf("%i", *Act);
         printf("%i", *HouseUpgrade);
     }
