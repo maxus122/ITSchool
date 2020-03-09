@@ -5,11 +5,6 @@
     #include <time.h>
     #define LEN 100
 
-    void Painting();
-    void KeyboardControls();
-    void Save();
-    void Load();
-    
     //Классы
     class Button
     {
@@ -28,17 +23,49 @@
                 secondY = valueSecondY;
             }
 
-            IsClicked()
+            bool IsClicked()
             {
+                RECT Collision = {firstX, firstY, secondX, secondY};
                 if(GetAsyncKeyState(VK_LBUTTON))
                 {
-                    if(In (txMousePos(), MainMenuMapBTN_NewGame))
+                    if(In(txMousePos(), Collision))
                     {   
                         return TRUE;
                     }
                 }
             }
     };
+
+    void Painting(
+        int Layout, int Act, int BackgroundX1, int BackgroundX2, int MenuStage, int MapMove, 
+
+        HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, 
+        HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap,
+        HDC BACKGROUNDSmithy, HDC BACKGROUNDUpgrade_FirstLvl, HDC BACKGROUNDUpgradeSecondLvl, 
+        HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUND_Upgrade_Buying, HDC BACKGROUNDMap, 
+        HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX,
+        HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, 
+        HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction);
+
+    void KeyboardControls(
+        int *Layout, int *Act, int *BackgroundX1, int *BackgroundX2, int *MenuStage, int *MapMove,
+
+        Button Left, Button Righ, Button Smithy, Button Upgrade, 
+        Button Map, Button Upgr, Button UpgradeBack, Button VFirstAct,
+        Button XFirstAct, Button VSecondAct, Button XSecondAct, Button VThirdAct, 
+        Button XThirdAct, Button VFourthAct, Button XFourthAct, Button VFifthAct, 
+        Button XFifthAct, Button MapBack, Button GameFirstAction, Button GameSecondAction, 
+        Button GameThirdAction, Button GameFourthAction, Button GameFifthAction, Button GameSixthAction,
+
+        HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, 
+        HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap,
+        HDC BACKGROUNDSmithy, HDC BACKGROUNDUpgrade_FirstLvl, HDC BACKGROUNDUpgradeSecondLvl, 
+        HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUND_Upgrade_Buying, HDC BACKGROUNDMap, 
+        HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX,
+        HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, 
+        HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction);
+    void Save();
+    void Load();
     
     int main()
     {
@@ -72,7 +99,7 @@
         HDC BACKGROUNDUpgradeThirdLvl = txLoadImage("Resources\\Maps\\BACKGROUND_Upgrade_ThirdLvl.bmp");
         HDC BACKGROUND_Upgrade_Buying = txLoadImage("Resources\\Maps\\BACKGROUND_Upgrade_Buying.bmp");
 
-        HDC BACKGROUNDMap = txLoadImage("Resources\\Maps\\BACKGROUND_Map.bmp");
+        HDC BACKGROUNDMap = txLoadImage("Resources\\Maps\\BACKGROUND_Map.bmp"); 
         HDC UICloudAct1 = txLoadImage("Resources\\Maps\\UI_Cloud_Act1.bmp");
         HDC UICloudAct2 = txLoadImage("Resources\\Maps\\UI_Cloud_Act2.bmp");
         HDC UICloudAct3 = txLoadImage("Resources\\Maps\\UI_Cloud_Act3.bmp");
@@ -80,7 +107,7 @@
         HDC BTNV = txLoadImage("Resources\\Maps\\BTN_V.bmp");
         HDC BTNX = txLoadImage("Resources\\Maps\\BTN_X.bmp");
         
-        HDC BACKGROUNDGame = txLoadImage("Resources\\Maps\\BACKGROUND_Game.bmp");
+        HDC BACKGROUNDGame = txLoadImage("Resources\\Maps\\BACKGROUND_Game.bmp"); 
         HDC BACKGROUNDFirstHouse = txLoadImage("Resources\\Maps\\UI_Cloud_Act2.bmp");
         HDC BACKGROUNDSecondHouse = txLoadImage("Resources\\Maps\\BACKGROUND_SecondHouse.bmp");
         HDC BACKGROUNDThirdHouse = txLoadImage("Resources\\Maps\\BACKGROUND_ThirdHouse.bmp");
@@ -90,41 +117,62 @@
         HDC BTNFourthAndFifthActAction = txLoadImage("Resources\\Maps\\BTN_FourthAndFifthAct_Action.bmp");
 
         //Кнопки
-        Button BTNLeft(36, 324, 80, 395);
-        Button BTNRight(1225, 324, 1269, 395);
-        Button BTNSmithy(941, 0, 1036, 95);
-        Button BTNUpgrade(941, 0, 1036, 95);
-        Button BTNMap(941, 0, 1036, 95);
-        Button BTNUpgr(431, 557, 646, 611);
+        Button Left(36, 324, 80, 395); 
+        Button Right(1225, 324, 1269, 395);
+        Button Smithy(941, 0, 1036, 95);
+        Button Upgrade(941, 0, 1036, 95);
+        Button Map(941, 0, 1036, 95);
+        Button Upgr(431, 557, 646, 611);
+        Button UpgradeBack(115, 613, 221, 645);
 
-        Button BTNVFirstAct(265, 488, 375, 567);
-        Button BTNXFirstAct(265, 479, 375, 578);
-        Button BTNVSecondAct(564, 388, 672, 467);
-        Button BTNXSecondAct(562, 379, 672, 478);
-        Button BTNVThirdAct(320, 252, 430, 331);
-        Button BTNXThirdAct(320, 243, 430, 342);
-        Button BTNVFourthAct(920, 476, 1030, 555);
-        Button BTNXFourthAct(920, 467, 1030, 566);
-        Button BTNVFifthAct(879, 229, 989, 308);
-        Button BTNXFifthAct(879, 220, 989, 319);
+        Button VFirstAct(265, 488, 375, 567);
+        Button XFirstAct(265, 479, 375, 578);
+        Button VSecondAct(564, 388, 672, 467);
+        Button XSecondAct(562, 379, 672, 478);
+        Button VThirdAct(320, 252, 430, 331);
+        Button XThirdAct(320, 243, 430, 342);
+        Button VFourthAct(920, 476, 1030, 555);
+        Button XFourthAct(920, 467, 1030, 566);
+        Button VFifthAct(879, 229, 989, 308);
+        Button XFifthAct(879, 220, 989, 319);
+        Button MapBack(534, 610, 759, 703);
 
-        Button BTNGameFirstAction(369, 630, 458, 719);
-        Button BTNGameSecondAction(462, 630, 551, 719);
-        Button BTNGameThirdAction(555, 630, 644, 719);
-        Button BTNGameFourthAction(651, 630, 740, 719);
-        Button BTNGameFifthAction(744, 630, 833, 719);
-        Button BTNGameSixthAction(837, 630, 926, 719);
-
+        Button GameFirstAction(369, 630, 458, 719);
+        Button GameSecondAction(462, 630, 551, 719);
+        Button GameThirdAction(555, 630, 644, 719);
+        Button GameFourthAction(651, 630, 740, 719);
+        Button GameFifthAction(744, 630, 833, 719);
+        Button GameSixthAction(837, 630, 926, 719);
 
         while(TRUE)
         {
+            if(Level == 1)
+            {
+                if(BackgroundX1 == 0)
+                {
+                    MenuStage = 0;
+                }
+                if(BackgroundX1 == 1290)
+                {
+                    MenuStage = 1;
+                }
+                if(BackgroundX1 == 2580)
+                {
+                    MenuStage = 2;
+                }
+                if(BackgroundX1 == 3870)
+                {
+                    MenuStage = 3;
+                }
+            }
+
             txBegin();
-            painting();
+                Painting(Layout, Act, BackgroundX1, BackgroundX2, MenuStage, MapMove, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgrade_FirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUND_Upgrade_Buying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction);
             txEnd();
 
             if(MapMove == 0)
             {
-                keyboardControls();
+                KeyboardControls(&Layout, &Act, &BackgroundX1, &BackgroundX2, &MenuStage, &MapMove, Left, Right, Smithy, Upgrade, Map, Upgr, UpgradeBack, VFirstAct, XFirstAct, VSecondAct, XSecondAct, VThirdAct, XThirdAct, VFourthAct, XFourthAct, VFifthAct, XFifthAct, MapBack, GameFirstAction, GameSecondAction, GameThirdAction, GameFourthAction, GameFifthAction, GameSixthAction, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgrade_FirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUND_Upgrade_Buying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction);
             }
 
             Sleep(1);
@@ -132,15 +180,75 @@
         
     }
 
-    void Painting()
+    void Painting(int Layout, int Act, int BackgroundX1, int BackgroundX2, int MenuStage, int MapMove, HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap, HDC BACKGROUNDSmithy, HDC BACKGROUNDUpgrade_FirstLvl, HDC BACKGROUNDUpgradeSecondLvl, HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUND_Upgrade_Buying, HDC BACKGROUNDMap, HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX, HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction)
     {
         txSetFillColor(TX_WHITE);
         txClear();
+        if(Layout == 0)
+        {
+            txBitBlt(txDC(), 0, 0, BackgroundX2, 720, MainMenuMap, BackgroundX1, 0);
+        }
+
+        if(Level == 1)
+        {
+            if(BackgroundX1 == 0)
+            {
+                MenuStage = 0;
+            }
+            if(BackgroundX1 == 1290)
+            {
+                MenuStage = 1;
+            }
+            if(BackgroundX1 == 2580)
+            {
+                MenuStage = 2;
+            }
+            if(BackgroundX1 == 3870)
+            {
+                MenuStage = 3;
+            }
+
+            txBitBlt(txDC(), 0, 0, BackgroundX2, 720, MenuMap, BackgroundX1, 0);
+            if(MapMove != 1)
+            {
+                txAlphaBlend(txDC(), 0, 0, 1296, 720, UI, 0, 0, 1);
+                if(MenuStage == 0)
+                {
+                    txAlphaBlend(txDC(), 0, 0, 1296, 720, MainMenuBTN_Right, 0, 0, 1);
+                }
+                if(MenuStage == 1)
+                {
+                    txAlphaBlend(txDC(), 0, 0, 1296, 720, MainMenuBTN_Right, 0, 0, 1);
+                    txAlphaBlend(txDC(), 0, 0, 1296, 720, MainMenuBTN_Left, 0, 0, 1);
+                    txAlphaBlend(txDC(), 0, 0, 1296, 720, MainMenuBTN_Smithy, 0, 0, 1);
+                }
+                if(MenuStage == 2)
+                {
+                    txAlphaBlend(txDC(), 0, 0, 1296, 720, MainMenuBTN_Right, 0, 0, 1);
+                    txAlphaBlend(txDC(), 0, 0, 1296, 720, MainMenuBTN_Left, 0, 0, 1);
+                }
+                if(MenuStage == 3)
+                {
+                    txAlphaBlend(txDC(), 0, 0, 1296, 720, MainMenuBTN_Left, 0, 0, 1);
+                    txAlphaBlend(txDC(), 0, 0, 1296, 720, MainMenuBTN_Boat, 0, 0, 1);
+                }
+            }
+        }
+
+        if(Level == 3)
+        {
+            txBitBlt(txDC(), 0, 0, 1296, 720, SmithyMap, 0, 0);
+        }
+
+        if(Level == 4)
+        {
+            txBitBlt(txDC(), 0, 0, 1296, 720, GameMap, 0, 0);
+        }
     }
 
-    void KeyboardControls()
+    void KeyboardControls(int *Layout, int *Act, int *BackgroundX1, int *BackgroundX2, int *MenuStage, int *MapMove, Button Left, Button Righ, Button Smithy, Button Upgrade, Button Map, Button Upgr, Button UpgradeBack, Button VFirstAct, Button XFirstAct, Button VSecondAct, Button XSecondAct, Button VThirdAct, Button XThirdAct, Button VFourthAct, Button XFourthAct, Button VFifthAct, Button XFifthAct, Button MapBack, Button GameFirstAction, Button GameSecondAction, Button GameThirdAction, Button GameFourthAction, Button GameFifthAction, Button GameSixthAction, HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap, HDC BACKGROUNDSmithy, HDC BACKGROUNDUpgrade_FirstLvl, HDC BACKGROUNDUpgradeSecondLvl, HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUND_Upgrade_Buying, HDC BACKGROUNDMap, HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX, HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction)
     {
-
+        
     }
 
     void Save()
