@@ -97,21 +97,23 @@
         Button BTNMap(941, 0, 1036, 95);
         Button BTNUpgr(431, 557, 646, 611);
 
-        Button BTNVFirstAct();
-        Button BTNXFirstAct();
-        Button BTNVSecondAct();
-        Button BTNXSecondAct();
-        Button BTNVThirdAct();
-        Button BTNXThirdAct();
-        Button BTNVFourthAct();
-        Button BTNXFourthAct();
-        Button BTNVFifthAct();
-        Button BTNXFifthAct();
+        Button BTNVFirstAct(265, 488, 375, 567);
+        Button BTNXFirstAct(265, 479, 375, 578);
+        Button BTNVSecondAct(564, 388, 672, 467);
+        Button BTNXSecondAct(562, 379, 672, 478);
+        Button BTNVThirdAct(320, 252, 430, 331);
+        Button BTNXThirdAct(320, 243, 430, 342);
+        Button BTNVFourthAct(920, 476, 1030, 555);
+        Button BTNXFourthAct(920, 467, 1030, 566);
+        Button BTNVFifthAct(879, 229, 989, 308);
+        Button BTNXFifthAct(879, 220, 989, 319);
 
-        Button BTNFirstActAction();
-        Button BTNSecondActAction();
-        Button BTNThirdActAction();
-        Button BTNFourthAndFifthActAction();
+        Button BTNGameFirstAction(369, 630, 458, 719);
+        Button BTNGameSecondAction(462, 630, 551, 719);
+        Button BTNGameThirdAction(555, 630, 644, 719);
+        Button BTNGameFourthAction(651, 630, 740, 719);
+        Button BTNGameFifthAction(744, 630, 833, 719);
+        Button BTNGameSixthAction(837, 630, 926, 719);
 
 
         while(TRUE)
