@@ -73,7 +73,7 @@
         HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, 
         HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction);
     void Save(int Act, int HouseUpgrade);
-    void Load();
+    void Load(int *Act, int *HouseUpgrade);
     
     int main()
     {
@@ -158,6 +158,8 @@
         Button GameFourthAction(651, 630, 740, 719, 5);
         Button GameFifthAction(744, 630, 833, 719, 5);
         Button GameSixthAction(837, 630, 926, 719, 5);
+
+Load(&Act, &HouseUpgrade);
 
         while(TRUE)
         {
@@ -506,7 +508,18 @@
         fclose(Save);
     }
 
-    void Load()
+    void Load(int *Act, int *HouseUpgrade)
     {
+        FILE *Load;
+        char LoadText[LEN];
 
+        Load = fopen("Resources\\Saving.txt", "r");
+        fgets(LoadText, LEN, Load);
+        
+        *Act = atoi(strtok(LoadText, "_"));
+        *HouseUpgrade = atoi(strtok(NULL, "_"));
+               
+        
+        printf("%i", *Act);
+        printf("%i", *HouseUpgrade);
     }
