@@ -510,32 +510,47 @@
 
         if(XFirstAct.IsClicked(*Layout))
         {
-            *Act = 2;
-            Save(*Act, *HouseUpgrade);
+            if(*Act == 1)
+            {
+                *Act = 2;
+                Save(*Act, *HouseUpgrade);
+            }
         }
 
         if(XSecondAct.IsClicked(*Layout))
         {
-            *Act = 3;
-            Save(*Act, *HouseUpgrade);
+            if(*Act == 2)
+            {
+                *Act = 3;
+                Save(*Act, *HouseUpgrade);
+            }
         }
 
         if(XThirdAct.IsClicked(*Layout))
         {
-            *Act = 4;
-            Save(*Act, *HouseUpgrade);
+            if(*Act == 3)
+            {
+                *Act = 4;
+                Save(*Act, *HouseUpgrade);
+            }
         }
 
         if(XFourthAct.IsClicked(*Layout))
         {
-            *Act = 5;
-            Save(*Act, *HouseUpgrade);
+            if(*Act == 4)
+            {
+                *Act = 5;
+                Save(*Act, *HouseUpgrade);
+            }
         }
 
         if(XFifthAct.IsClicked(*Layout))
         {
-            *Act = 6;
-            Save(*Act, *HouseUpgrade);
+            if(*Act == 5)
+            {
+                *Act = 6;
+                Save(*Act, *HouseUpgrade);
+            }
         }
 
         if(MapBack.IsClicked(*Layout))
@@ -550,6 +565,15 @@
             *MenuStage = 1;
             txSetFillColor(RGB(255, 255, 255));
             txSetColor(RGB(255, 255, 255));
+        }
+
+        if(GetAsyncKeyState('Q'))
+        {
+            printf("%i", *Act);
+        }
+        if(GetAsyncKeyState('E'))
+        {
+            printf("%i", *HouseUpgrade);
         }
     }
 
