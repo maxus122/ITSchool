@@ -43,6 +43,22 @@
             }
     };
 
+    class Collector
+    {
+        private:
+            int x;
+            int y;
+            int animation;
+            int frame;
+            
+        public:
+            void Drawing(HDC )
+            {
+
+            }
+
+    }
+
     void Painting(
         int Layout, int Act, int HouseUpgrade, int HouseUpgradeSelect, 
         int BackgroundX1, int BackgroundX2, int MenuStage, int MapMove, 
@@ -94,39 +110,39 @@
         int MapMove = 0;
 
         //Загрузка картинок
-        HDC BACKGROUNDMainMenu = txLoadImage("Resources\\Maps\\BACKGROUND_MainMenu.bmp");
+        HDC BACKGROUNDMainMenu = txLoadImage("Resources\\Images\\BACKGROUND_MainMenu.bmp");
 
-        HDC BACKGROUNDMenu = txLoadImage("Resources\\Maps\\BACKGROUND_Menu.bmp");
-        HDC UIMenu = txLoadImage("Resources\\Maps\\UI_Menu.bmp");
-        HDC BTNLeft = txLoadImage("Resources\\Maps\\BTN_Left.bmp");
-        HDC BTNRight = txLoadImage("Resources\\Maps\\BTN_Right.bmp");
-        HDC BTNSmithy = txLoadImage("Resources\\Maps\\BTN_Smithy.bmp");   
-        HDC BTNUpgrade = txLoadImage("Resources\\Maps\\BTN_Upgrade.bmp");
-        HDC BTNMap = txLoadImage("Resources\\Maps\\BTN_Map.bmp");
+        HDC BACKGROUNDMenu = txLoadImage("Resources\\Images\\BACKGROUND_Menu.bmp");
+        HDC UIMenu = txLoadImage("Resources\\Images\\UI_Menu.bmp");
+        HDC BTNLeft = txLoadImage("Resources\\Images\\BTN_Left.bmp");
+        HDC BTNRight = txLoadImage("Resources\\Images\\BTN_Right.bmp");
+        HDC BTNSmithy = txLoadImage("Resources\\Images\\BTN_Smithy.bmp");   
+        HDC BTNUpgrade = txLoadImage("Resources\\Images\\BTN_Upgrade.bmp");
+        HDC BTNMap = txLoadImage("Resources\\Images\\BTN_Map.bmp");
 
-        HDC BACKGROUNDSmithy = txLoadImage("Resources\\Maps\\BACKGROUND_Smithy.bmp");
+        HDC BACKGROUNDSmithy = txLoadImage("Resources\\Images\\BACKGROUND_Smithy.bmp");
 
-        HDC BACKGROUNDUpgradeFirstLvl = txLoadImage("Resources\\Maps\\BACKGROUND_Upgrade_FirstLvl.bmp");
-        HDC BACKGROUNDUpgradeSecondLvl = txLoadImage("Resources\\Maps\\BACKGROUND_Upgrade_SecondLvl.bmp");
-        HDC BACKGROUNDUpgradeThirdLvl = txLoadImage("Resources\\Maps\\BACKGROUND_Upgrade_ThirdLvl.bmp");
-        HDC BACKGROUNDUpgradeBuying = txLoadImage("Resources\\Maps\\BACKGROUND_Upgrade_Buying.bmp");
+        HDC BACKGROUNDUpgradeFirstLvl = txLoadImage("Resources\\Images\\BACKGROUND_Upgrade_FirstLvl.bmp");
+        HDC BACKGROUNDUpgradeSecondLvl = txLoadImage("Resources\\Images\\BACKGROUND_Upgrade_SecondLvl.bmp");
+        HDC BACKGROUNDUpgradeThirdLvl = txLoadImage("Resources\\Images\\BACKGROUND_Upgrade_ThirdLvl.bmp");
+        HDC BACKGROUNDUpgradeBuying = txLoadImage("Resources\\Images\\BACKGROUND_Upgrade_Buying.bmp");
 
-        HDC BACKGROUNDMap = txLoadImage("Resources\\Maps\\BACKGROUND_Map.bmp"); 
-        HDC UICloudAct1 = txLoadImage("Resources\\Maps\\UI_Cloud_Act1.bmp");
-        HDC UICloudAct2 = txLoadImage("Resources\\Maps\\UI_Cloud_Act2.bmp");
-        HDC UICloudAct3 = txLoadImage("Resources\\Maps\\UI_Cloud_Act3.bmp");
-        HDC UICloudAct4 = txLoadImage("Resources\\Maps\\UI_Cloud_Act4.bmp");
-        HDC BTNV = txLoadImage("Resources\\Maps\\BTN_V.bmp");
-        HDC BTNX = txLoadImage("Resources\\Maps\\BTN_X.bmp");
+        HDC BACKGROUNDMap = txLoadImage("Resources\\Images\\BACKGROUND_Map.bmp"); 
+        HDC UICloudAct1 = txLoadImage("Resources\\Images\\UI_Cloud_Act1.bmp");
+        HDC UICloudAct2 = txLoadImage("Resources\\Images\\UI_Cloud_Act2.bmp");
+        HDC UICloudAct3 = txLoadImage("Resources\\Images\\UI_Cloud_Act3.bmp");
+        HDC UICloudAct4 = txLoadImage("Resources\\Images\\UI_Cloud_Act4.bmp");
+        HDC BTNV = txLoadImage("Resources\\Images\\BTN_V.bmp");
+        HDC BTNX = txLoadImage("Resources\\Images\\BTN_X.bmp");
         
-        HDC BACKGROUNDGame = txLoadImage("Resources\\Maps\\BACKGROUND_Game.bmp"); 
-        HDC BACKGROUNDFirstHouse = txLoadImage("Resources\\Maps\\BACKGROUND_FirstHouse.bmp");
-        HDC BACKGROUNDSecondHouse = txLoadImage("Resources\\Maps\\BACKGROUND_SecondHouse.bmp");
-        HDC BACKGROUNDThirdHouse = txLoadImage("Resources\\Maps\\BACKGROUND_ThirdHouse.bmp");
-        HDC BTNFirstActAction = txLoadImage("Resources\\Maps\\BTN_FirstAct_Action.bmp");
-        HDC BTNSecondActAction = txLoadImage("Resources\\Maps\\BTN_SecondAct_Action.bmp");
-        HDC BTNThirdActAction = txLoadImage("Resources\\Maps\\BTN_ThirdAct_Action.bmp");
-        HDC BTNFourthAndFifthActAction = txLoadImage("Resources\\Maps\\BTN_FourthAndFifthAct_Action.bmp");
+        HDC BACKGROUNDGame = txLoadImage("Resources\\Images\\BACKGROUND_Game.bmp"); 
+        HDC BACKGROUNDFirstHouse = txLoadImage("Resources\\Images\\BACKGROUND_FirstHouse.bmp");
+        HDC BACKGROUNDSecondHouse = txLoadImage("Resources\\Images\\BACKGROUND_SecondHouse.bmp");
+        HDC BACKGROUNDThirdHouse = txLoadImage("Resources\\Images\\BACKGROUND_ThirdHouse.bmp");
+        HDC BTNFirstActAction = txLoadImage("Resources\\Images\\BTN_FirstAct_Action.bmp");
+        HDC BTNSecondActAction = txLoadImage("Resources\\Images\\BTN_SecondAct_Action.bmp");
+        HDC BTNThirdActAction = txLoadImage("Resources\\Images\\BTN_ThirdAct_Action.bmp");
+        HDC BTNFourthAndFifthActAction = txLoadImage("Resources\\Images\\BTN_FourthAndFifthAct_Action.bmp");
 
         //Кнопки
         Button NewGame(431, 306, 861, 414, 0); 
@@ -317,6 +333,41 @@
                 txAlphaBlend(txDC(), 320, 252, 111, 80, BTNV, 0, 0, 1);
                 txAlphaBlend(txDC(), 920, 476, 111, 80, BTNV, 0, 0, 1);
                 txAlphaBlend(txDC(), 879, 229, 111, 80, BTNV, 0, 0, 1);
+            }
+        }
+
+        if(Layout == 5)
+        {
+            txBitBlt(txDC(), 0, 0, 1296, 720, BACKGROUNDGame, 0, 0);
+
+            if(HouseUpgrade == 1)
+            {
+                txAlphaBlend(txDC(), 0, 0, 1296, 720, BACKGROUNDFirstHouse, 0, 0, 1);
+            }
+            if(HouseUpgrade == 2)
+            {
+                txAlphaBlend(txDC(), 0, 0, 1296, 720, BACKGROUNDSecondHouse, 0, 0, 1);
+            }
+            if(HouseUpgrade == 3)
+            {
+                txAlphaBlend(txDC(), 0, 0, 1296, 720, BACKGROUNDThirdHouse, 0, 0, 1);
+            }
+
+            if(Act == 1)
+            {
+                txAlphaBlend(txDC(), 0, 0, 1296, 720, BTNFirstActAction, 0, 0, 1);
+            }
+            if(Act == 2)
+            {
+                txAlphaBlend(txDC(), 0, 0, 1296, 720, BTNSecondActAction, 0, 0, 1);
+            }
+            if(Act == 3)
+            {
+                txAlphaBlend(txDC(), 0, 0, 1296, 720, BTNThirdActAction, 0, 0, 1);
+            }
+            if(Act == 4 or Act == 5)
+            {
+                txAlphaBlend(txDC(), 0, 0, 1296, 720, BTNFourthAndFifthActAction, 0, 0, 1);
             }
         }
     }
@@ -512,8 +563,16 @@
         {
             if(*Act == 1)
             {
-                *Act = 2;
-                Save(*Act, *HouseUpgrade);
+                txSetFillColor(RGB(0, 0, 0));
+                txSetColor(RGB(0, 0, 0));
+                txClear();
+                *BackgroundX1 = 0; 
+                *BackgroundX2 = 1296;
+                Sleep(500);
+                *Layout = 5;
+                *MenuStage = 0;
+                txSetFillColor(RGB(255, 255, 255));
+                txSetColor(RGB(255, 255, 255));
             }
         }
 
@@ -521,8 +580,16 @@
         {
             if(*Act == 2)
             {
-                *Act = 3;
-                Save(*Act, *HouseUpgrade);
+                txSetFillColor(RGB(0, 0, 0));
+                txSetColor(RGB(0, 0, 0));
+                txClear();
+                *BackgroundX1 = 0; 
+                *BackgroundX2 = 1296;
+                Sleep(500);
+                *Layout = 5;
+                *MenuStage = 0;
+                txSetFillColor(RGB(255, 255, 255));
+                txSetColor(RGB(255, 255, 255));
             }
         }
 
@@ -530,8 +597,16 @@
         {
             if(*Act == 3)
             {
-                *Act = 4;
-                Save(*Act, *HouseUpgrade);
+                txSetFillColor(RGB(0, 0, 0));
+                txSetColor(RGB(0, 0, 0));
+                txClear();
+                *BackgroundX1 = 0; 
+                *BackgroundX2 = 1296;
+                Sleep(500);
+                *Layout = 5;
+                *MenuStage = 0;
+                txSetFillColor(RGB(255, 255, 255));
+                txSetColor(RGB(255, 255, 255));
             }
         }
 
@@ -539,8 +614,16 @@
         {
             if(*Act == 4)
             {
-                *Act = 5;
-                Save(*Act, *HouseUpgrade);
+                txSetFillColor(RGB(0, 0, 0));
+                txSetColor(RGB(0, 0, 0));
+                txClear();
+                *BackgroundX1 = 0; 
+                *BackgroundX2 = 1296;
+                Sleep(500);
+                *Layout = 5;
+                *MenuStage = 0;
+                txSetFillColor(RGB(255, 255, 255));
+                txSetColor(RGB(255, 255, 255));
             }
         }
 
@@ -548,8 +631,16 @@
         {
             if(*Act == 5)
             {
-                *Act = 6;
-                Save(*Act, *HouseUpgrade);
+                txSetFillColor(RGB(0, 0, 0));
+                txSetColor(RGB(0, 0, 0));
+                txClear();
+                *BackgroundX1 = 0; 
+                *BackgroundX2 = 1296;
+                Sleep(500);
+                *Layout = 5;
+                *MenuStage = 0;
+                txSetFillColor(RGB(255, 255, 255));
+                txSetColor(RGB(255, 255, 255));
             }
         }
 
