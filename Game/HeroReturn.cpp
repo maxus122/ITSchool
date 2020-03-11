@@ -754,15 +754,48 @@
         }
         if(*Act == 2)
         {
-
+            if(GameThirdAction.IsClicked(*Layout))
+            {
+                for(int i = 0; i < 26; i++)
+                {
+                    if(collectorArray[i].GetState() == 0)
+                    {
+                        printf("%i", 1);
+                        collectorArray[i].SetState(1);
+                        break;
+                    }
+                }
+            }
         }
         if(*Act == 3)
         {
-
+            if(GameSecondAction.IsClicked(*Layout))
+            {
+                for(int i = 0; i < 26; i++)
+                {
+                    if(collectorArray[i].GetState() == 0)
+                    {
+                        printf("%i", 1);
+                        collectorArray[i].SetState(1);
+                        break;
+                    }
+                }
+            }
         }
         if(*Act == 4 or *Act == 5)
         {
-
+            if(GameFirstAction.IsClicked(*Layout))
+            {
+                for(int i = 0; i < 26; i++)
+                {
+                    if(collectorArray[i].GetState() == 0)
+                    {
+                        printf("%i", 1);
+                        collectorArray[i].SetState(1);
+                        break;
+                    }
+                }
+            }
         }
 
 
