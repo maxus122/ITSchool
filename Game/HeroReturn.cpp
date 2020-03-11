@@ -149,14 +149,16 @@
         for(int i = 0; i<26; i++)
         {
             collectorArray[i].SetState(0);
+            collectorArray[0].SetCoordinate(139, 194);
+            collectorArray[0].SetAnimation(1);
         }
-        collectorArray[0].SetState(1);
+        /*collectorArray[0].SetState(1);
         collectorArray[0].SetCoordinate(0, 0);
         collectorArray[0].SetAnimation(1);
 
         collectorArray[1].SetState(1);
         collectorArray[1].SetCoordinate(100, 100);
-        collectorArray[1].SetAnimation(1);
+        collectorArray[1].SetAnimation(1);*/
 
 
 
@@ -734,6 +736,35 @@
             txSetFillColor(RGB(255, 255, 255));
             txSetColor(RGB(255, 255, 255));
         }
+
+        if(*Act == 1)
+        {
+            if(GameThirdAction.IsClicked(*Layout))
+            {
+                for(int i = 0; i < 26; i++)
+                {
+                    if(collectorArray[i].GetState() == 0)
+                    {
+                        printf("%i", 1);
+                        collectorArray[i].SetState(1);
+                        break;
+                    }
+                }
+            }
+        }
+        if(*Act == 2)
+        {
+
+        }
+        if(*Act == 3)
+        {
+
+        }
+        if(*Act == 4 or *Act == 5)
+        {
+
+        }
+
 
         if(GetAsyncKeyState('Q'))
         {
