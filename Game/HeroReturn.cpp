@@ -55,40 +55,31 @@
             int IsCreated;
             
         public:
-            void SetCoordinate(int valueX, int valueY)
+            void SetCoordinate(int valueX, int valueY) {x = valueX; y = valueY; }
+            void SetState(int valueState) { IsCreated = valueState; }
+            void SetAnimation(int valueAnimation) { animation = valueAnimation; }
+            void SetFrame(int valueFrame) {frame = valueFrame;}
+            void Frames(int NowFrame)
             {
-                x = valueX;
-                y = valueY;
-            }
-            void SetState(int valueState)
-            {
-                IsCreated = valueState;
-            }
-            void SetAnimation(int valueAnimation)
-            {
-                animation = valueAnimation;
+                if(NowFrame == 1)
+                {
+                    frame = 2;
+                }
+                if(NowFrame == 2)
+                {
+                    frame = 3;
+                }
+                if(NowFrame == 3)
+                {
+                    frame = 1;
+                }
             }
 
-            int GetX()
-            {
-                return x;
-            }
-            int GetY()
-            {
-                return y;
-            }
-            int GetAnimation()
-            {
-                return animation;
-            }
-            int GetFrame()
-            {
-                return frame;
-            }
-            int GetState()
-            {
-                return IsCreated;
-            }
+            int GetX() { return x; }
+            int GetY() { return y; }
+            int GetAnimation() { return animation; }
+            int GetFrame() { return frame; }
+            int GetState() { return IsCreated; }
     };
 
     void Painting(
@@ -103,7 +94,7 @@
         HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX,
         HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, 
         HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction,
-        HDC Collector011);
+        HDC Collector011, HDC Collector012, HDC Collector013);
 
     void KeyboardControls(
         int *Layout, int *Act, int *HouseUpgrade, int *HouseUpgradeSelect, 
@@ -125,7 +116,7 @@
         HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX,
         HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, 
         HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction,
-        HDC Collector011);
+        HDC Collector011, HDC Collector012, HDC Collector013);
     void Save(int Act, int HouseUpgrade);
     void Load(int *Act, int *HouseUpgrade);
     
@@ -144,13 +135,12 @@
         int BackgroundX2 = 1296;
         int MenuStage = 1;
         int MapMove = 0;
+        int Time = 0;
 
         Collector collectorArray[25];
         for(int i = 0; i<26; i++)
         {
             collectorArray[i].SetState(0);
-            collectorArray[0].SetCoordinate(139, 194);
-            collectorArray[0].SetAnimation(1);
         }
         /*collectorArray[0].SetState(1);
         collectorArray[0].SetCoordinate(0, 0);
@@ -159,8 +149,6 @@
         collectorArray[1].SetState(1);
         collectorArray[1].SetCoordinate(100, 100);
         collectorArray[1].SetAnimation(1);*/
-
-
 
         //Загрузка картинок
         HDC BACKGROUNDMainMenu = txLoadImage("Resources\\Images\\BACKGROUND_MainMenu.bmp");
@@ -199,18 +187,18 @@
 
         //Герои
         HDC Collector011 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_0_1_1.bmp"); 
-        HDC Collector_0_1_2 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_0_1_2.bmp");
-        HDC Collector_0_1_3 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_0_1_3.bmp");
-        HDC Collector_1_1_1 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_1_1_1.bmp");
-        HDC Collector_1_1_2 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_1_1_2.bmp");
-        HDC Collector_1_1_3 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_1_1_3.bmp");
+        HDC Collector012 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_0_1_2.bmp"); 
+        HDC Collector013 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_0_1_3.bmp");
+        HDC Collector111 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_1_1_1.bmp");
+        HDC Collector112 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_1_1_2.bmp");
+        HDC Collector113 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_1_1_3.bmp");
 
-        HDC Collector_0_2_1 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_0_2_1.bmp");
-        HDC Collector_0_2_2 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_0_2_2.bmp");
-        HDC Collector_0_2_3 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_0_2_3.bmp");
-        HDC Collector_1_2_1 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_1_2_1.bmp");
-        HDC Collector_1_2_2 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_1_2_2.bmp");
-        HDC Collector_1_2_3 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_1_2_3.bmp");
+        HDC Collector021 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_0_2_1.bmp");
+        HDC Collector022 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_0_2_2.bmp");
+        HDC Collector023 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_0_2_3.bmp");
+        HDC Collector121 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_1_2_1.bmp");
+        HDC Collector122 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_1_2_2.bmp");
+        HDC Collector123 = txLoadImage("Resources\\Images\\Hero\\Collector\\Collector_1_2_3.bmp");
 
         //Кнопки
         Button NewGame(431, 306, 861, 414, 0); 
@@ -249,6 +237,7 @@
         
         while(TRUE)
         {
+            Time++;
             if(Layout == 1)
             {
                 if(BackgroundX1 == 0)
@@ -266,12 +255,24 @@
             }
 
             txBegin();
-                Painting(Layout, Act, HouseUpgrade, HouseUpgradeSelect, BackgroundX1, BackgroundX2, MenuStage, MapMove, collectorArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Collector011);
+                Painting(Layout, Act, HouseUpgrade, HouseUpgradeSelect, BackgroundX1, BackgroundX2, MenuStage, MapMove, collectorArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Collector011, Collector012, Collector013);
             txEnd();
 
             if(MapMove == 0)
             {
-                KeyboardControls(&Layout, &Act, &HouseUpgrade, &HouseUpgradeSelect, &BackgroundX1, &BackgroundX2, &MenuStage, &MapMove, collectorArray, NewGame, Left, Right, Smithy, Upgrade, Map, Upgr, UpgradeFirstLvl, UpgradeSecondLvl, UpgradeThirdLvl, UpgradeBack, VFirstAct, XFirstAct, VSecondAct, XSecondAct, VThirdAct, XThirdAct, VFourthAct, XFourthAct, VFifthAct, XFifthAct, MapBack, GameFirstAction, GameSecondAction, GameThirdAction, GameFourthAction, GameFifthAction, GameSixthAction, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Collector011);
+                KeyboardControls(&Layout, &Act, &HouseUpgrade, &HouseUpgradeSelect, &BackgroundX1, &BackgroundX2, &MenuStage, &MapMove, collectorArray, NewGame, Left, Right, Smithy, Upgrade, Map, Upgr, UpgradeFirstLvl, UpgradeSecondLvl, UpgradeThirdLvl, UpgradeBack, VFirstAct, XFirstAct, VSecondAct, XSecondAct, VThirdAct, XThirdAct, VFourthAct, XFourthAct, VFifthAct, XFifthAct, MapBack, GameFirstAction, GameSecondAction, GameThirdAction, GameFourthAction, GameFifthAction, GameSixthAction, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Collector011, Collector012, Collector013);
+            }
+
+            if(Layout == 5)
+            {
+                if(Time%5 == 0)
+                {
+                    for(int i = 0; i<26; i++)
+                    {
+                        collectorArray[i].Frames(collectorArray[i].GetFrame());
+                        collectorArray[i].SetCoordinate(collectorArray[i].GetX()+7, 194);
+                    }
+                }
             }
 
             Sleep(1);
@@ -279,7 +280,7 @@
         
     }
 
-    void Painting(int Layout, int Act, int HouseUpgrade, int HouseUpgradeSelect, int BackgroundX1, int BackgroundX2, int MenuStage, int MapMove, Collector *collectorArray, HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap, HDC BACKGROUNDSmithy, HDC BACKGROUNDUpgradeFirstLvl, HDC BACKGROUNDUpgradeSecondLvl, HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUNDUpgradeBuying, HDC BACKGROUNDMap, HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX, HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction, HDC Collector011)
+    void Painting(int Layout, int Act, int HouseUpgrade, int HouseUpgradeSelect, int BackgroundX1, int BackgroundX2, int MenuStage, int MapMove, Collector *collectorArray, HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap, HDC BACKGROUNDSmithy, HDC BACKGROUNDUpgradeFirstLvl, HDC BACKGROUNDUpgradeSecondLvl, HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUNDUpgradeBuying, HDC BACKGROUNDMap, HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX, HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction, HDC Collector011, HDC Collector012, HDC Collector013)
     {
         txSetFillColor(TX_WHITE);
         txClear();
@@ -444,14 +445,28 @@
                 {
                     if(collectorArray[i].GetAnimation() == 1)
                     {
-                        txAlphaBlend(txDC(), collectorArray[i].GetX(), collectorArray[i].GetY(), 57, 93, Collector011, 0, 0, 1);
+                        if(collectorArray[i].GetFrame() == 1)
+                        {
+                            printf("%i", 2);
+                            txAlphaBlend(txDC(), collectorArray[i].GetX(), collectorArray[i].GetY(), 57, 93, Collector011, 0, 0, 1);
+                        }
+                        if(collectorArray[i].GetFrame() == 2)
+                        {
+                            printf("%i", 3);
+                            txAlphaBlend(txDC(), collectorArray[i].GetX(), collectorArray[i].GetY(), 57, 93, Collector012, 0, 0, 1);
+                        }
+                        if(collectorArray[i].GetFrame() == 3)
+                        {
+                            printf("%i", 4);
+                            txAlphaBlend(txDC(), collectorArray[i].GetX(), collectorArray[i].GetY(), 57, 93, Collector013, 0, 0, 1);
+                        }
                     }
                 }
             }
         }
     }
 
-    void KeyboardControls(int *Layout, int *Act, int *HouseUpgrade, int *HouseUpgradeSelect, int *BackgroundX1, int *BackgroundX2, int *MenuStage, int *MapMove, Collector *collectorArray, Button NewGame, Button Left, Button Right, Button Smithy, Button Upgrade, Button Map, Button Upgr, Button UpgradeFirstLvl, Button UpgradeSecondLvl, Button UpgradeThirdLvl, Button UpgradeBack, Button VFirstAct, Button XFirstAct, Button VSecondAct, Button XSecondAct, Button VThirdAct, Button XThirdAct, Button VFourthAct, Button XFourthAct, Button VFifthAct, Button XFifthAct, Button MapBack, Button GameFirstAction, Button GameSecondAction, Button GameThirdAction, Button GameFourthAction, Button GameFifthAction, Button GameSixthAction, HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap, HDC BACKGROUNDSmithy, HDC BACKGROUNDUpgradeFirstLvl, HDC BACKGROUNDUpgradeSecondLvl, HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUNDUpgradeBuying, HDC BACKGROUNDMap, HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX, HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction, HDC Collector011)
+    void KeyboardControls(int *Layout, int *Act, int *HouseUpgrade, int *HouseUpgradeSelect, int *BackgroundX1, int *BackgroundX2, int *MenuStage, int *MapMove, Collector *collectorArray, Button NewGame, Button Left, Button Right, Button Smithy, Button Upgrade, Button Map, Button Upgr, Button UpgradeFirstLvl, Button UpgradeSecondLvl, Button UpgradeThirdLvl, Button UpgradeBack, Button VFirstAct, Button XFirstAct, Button VSecondAct, Button XSecondAct, Button VThirdAct, Button XThirdAct, Button VFourthAct, Button XFourthAct, Button VFifthAct, Button XFifthAct, Button MapBack, Button GameFirstAction, Button GameSecondAction, Button GameThirdAction, Button GameFourthAction, Button GameFifthAction, Button GameSixthAction, HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap, HDC BACKGROUNDSmithy, HDC BACKGROUNDUpgradeFirstLvl, HDC BACKGROUNDUpgradeSecondLvl, HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUNDUpgradeBuying, HDC BACKGROUNDMap, HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX, HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction, HDC Collector011, HDC Collector012, HDC Collector013)
     {
         if (GetAsyncKeyState(VK_SPACE))
         {
@@ -466,7 +481,7 @@
                         *BackgroundX2 = *BackgroundX2+10;
 
                         txBegin();
-                        Painting(*Layout, *Act, *HouseUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, collectorArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Collector011);
+                        Painting(*Layout, *Act, *HouseUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, collectorArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Collector011, Collector012, Collector013);
                         txEnd();
                     }
                     Sleep(500);
@@ -503,7 +518,7 @@
                     *BackgroundX2 = *BackgroundX2-10;
 
                     txBegin();
-                    Painting(*Layout, *Act, *HouseUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, collectorArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Collector011);
+                    Painting(*Layout, *Act, *HouseUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, collectorArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Collector011, Collector012, Collector013);
                     txEnd();
                 }
                 *MenuStage = *MenuStage-1;
@@ -523,7 +538,7 @@
                     *BackgroundX2 = *BackgroundX2+10;
 
                     txBegin();
-                    Painting(*Layout, *Act, *HouseUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, collectorArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Collector011);
+                    Painting(*Layout, *Act, *HouseUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, collectorArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Collector011, Collector012, Collector013);
                     txEnd();
                 }
                 *MenuStage = *MenuStage+1;
@@ -747,9 +762,13 @@
                     {
                         printf("%i", 1);
                         collectorArray[i].SetState(1);
+                        collectorArray[i].SetCoordinate(139, 194);
+                        collectorArray[i].SetAnimation(1);
+                        collectorArray[i].SetFrame(1);
                         break;
                     }
                 }
+                Sleep(250);
             }
         }
         if(*Act == 2)
@@ -762,9 +781,13 @@
                     {
                         printf("%i", 1);
                         collectorArray[i].SetState(1);
+                        collectorArray[i].SetCoordinate(139, 194);
+                        collectorArray[i].SetAnimation(1);
+                        collectorArray[i].SetFrame(1);
                         break;
                     }
                 }
+                Sleep(250);
             }
         }
         if(*Act == 3)
@@ -777,9 +800,13 @@
                     {
                         printf("%i", 1);
                         collectorArray[i].SetState(1);
+                        collectorArray[i].SetCoordinate(139, 194);
+                        collectorArray[i].SetAnimation(1);
+                        collectorArray[i].SetFrame(1);
                         break;
                     }
                 }
+                Sleep(250);
             }
         }
         if(*Act == 4 or *Act == 5)
@@ -792,12 +819,15 @@
                     {
                         printf("%i", 1);
                         collectorArray[i].SetState(1);
+                        collectorArray[i].SetCoordinate(139, 194);
+                        collectorArray[i].SetAnimation(1);
+                        collectorArray[i].SetFrame(1);
                         break;
                     }
                 }
+                Sleep(250);
             }
         }
-
 
         if(GetAsyncKeyState('Q'))
         {
