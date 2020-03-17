@@ -141,6 +141,10 @@
                 }
                 if(NowFrame == 3)
                 {
+                    frame = 4;
+                }
+                if(NowFrame == 4)
+                {
                     frame = 1;
                 }
             }
@@ -460,16 +464,19 @@
                     for(int i = 0; i<7; i++)
                     {
                         collectorArray[i].Frames(collectorArray[i].GetFrame());
-                        collectorArray[i].SetCoordinate(collectorArray[i].GetX()+7, 194);
+                        collectorArray[i].SetCoordinate(collectorArray[i].GetX()+7, 92);
                     }
-                }
-
-                if(Time%5 == 0)
-                {
                     for(int i = 0; i<4; i++)
                     {
                         woodcutterArray[i].Frames(woodcutterArray[i].GetFrame());
-                        woodcutterArray[i].SetCoordinate(woodcutterArray[i].GetX()+7, 194);
+                        woodcutterArray[i].SetCoordinate(woodcutterArray[i].GetX()+7, 92);
+                    }
+                }
+                if(Time%200 == 0)
+                {
+                    for(int i = 0; i<7; i++)
+                    {
+                        vegetablesArray[i].Frames(vegetablesArray[i].GetFrame());
                     }
                 }
             }
@@ -480,6 +487,7 @@
 
     void Painting(int Layout, int Act, int HouseUpgrade, int TreesUpgrade, int VegetablesUpgrade, int HouseUpgradeSelect, int BackgroundX1, int BackgroundX2, int MenuStage, int MapMove, Collector *collectorArray, Woodcutter *woodcutterArray, Vegetables *vegetablesArray, Trees *treesArray, HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap, HDC BACKGROUNDSmithy, HDC BACKGROUNDUpgradeFirstLvl, HDC BACKGROUNDUpgradeSecondLvl, HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUNDUpgradeBuying, HDC BACKGROUNDMap, HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX, HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction, HDC Vegetable11, HDC Vegetable12, HDC Vegetable13, HDC Vegetable14, HDC Vegetable21, HDC Vegetable22, HDC Vegetable23, HDC Vegetable24, HDC Vegetable31, HDC Vegetable32, HDC Vegetable33, HDC Vegetable34, HDC Tree11, HDC Tree12, HDC Tree13, HDC Tree21, HDC Tree22, HDC Tree23, HDC Tree31, HDC Tree32, HDC Tree33, HDC Collector011, HDC Collector012, HDC Collector013, HDC Collector111, HDC Collector112, HDC Collector113, HDC Collector021, HDC Collector022, HDC Collector023, HDC Collector121, HDC Collector122, HDC Collector123, HDC Woodcutter011, HDC Woodcutter012, HDC Woodcutter013, HDC Woodcutter111, HDC Woodcutter112, HDC Woodcutter113, HDC Woodcutter021, HDC Woodcutter022, HDC Woodcutter023, HDC Woodcutter121, HDC Woodcutter122, HDC Woodcutter123, HDC Archer011, HDC Archer012, HDC Archer013, HDC Archer111, HDC Archer112, HDC Archer113, HDC Archer021, HDC Archer022, HDC Archer023, HDC Archer121, HDC Archer122, HDC Archer123)
     {
+        vegetablesArray[0].SetCoordinate(288, 200);
         txSetFillColor(TX_WHITE);
         txClear();
         if(Layout == 0)
