@@ -55,6 +55,65 @@
             int IsCreated;
             
         public:
+            Collector()
+            {
+                animation = 1;
+                frame = 1;
+                IsCreated = 0;
+            }
+            void SetCoordinate(int valueX, int valueY) {x = valueX; y = valueY; }
+            void SetState(int valueState) { IsCreated = valueState; }
+            void SetAnimation(int valueAnimation) { animation = valueAnimation; }
+            void SetFrame(int valueFrame) {frame = valueFrame;}
+            void Frames(int NowFrame)
+            {
+                if(NowFrame == 1)
+                {
+                    frame = 2;
+                }
+                if(NowFrame == 2)
+                {
+                    frame = 3;
+                }
+                if(NowFrame == 3)
+                {
+                    frame = 1;
+                }
+            }
+            bool Collect()
+            {
+                if(In(x+22, 288, 333))
+                {
+                    if(animation != 2)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            int GetX() { return x; }
+            int GetY() { return y; }
+            int GetAnimation() { return animation; }
+            int GetFrame() { return frame; }
+            int GetState() { return IsCreated; }
+    };
+
+    class Woodcutter
+    {
+        private:
+            int x;
+            int y;
+            int animation;
+            int frame;
+            int IsCreated;
+            
+        public:
+            Woodcutter()
+            {
+                animation = 1;
+                frame = 1;
+                IsCreated = 0;
+            }
             void SetCoordinate(int valueX, int valueY) {x = valueX; y = valueY; }
             void SetState(int valueState) { IsCreated = valueState; }
             void SetAnimation(int valueAnimation) { animation = valueAnimation; }
@@ -82,7 +141,7 @@
             int GetState() { return IsCreated; }
     };
 
-    class Woodcutter
+    class Archer
     {
         private:
             int x;
@@ -92,6 +151,12 @@
             int IsCreated;
             
         public:
+            Archer()
+            {
+                animation = 1;
+                frame = 1;
+                IsCreated = 0;
+            }
             void SetCoordinate(int valueX, int valueY) {x = valueX; y = valueY; }
             void SetState(int valueState) { IsCreated = valueState; }
             void SetAnimation(int valueAnimation) { animation = valueAnimation; }
@@ -125,33 +190,39 @@
             int x;
             int y;
             int frame;
+            bool IsCollecting;
             
         public:
+            Vegetables()
+            {
+                frame = 1;
+                IsCollecting = 0;
+            }
             void SetCoordinate(int valueX, int valueY) {x = valueX; y = valueY; }
             void SetFrame(int valueFrame) {frame = valueFrame;}
             void Frames(int NowFrame)
             {
-                if(NowFrame == 1)
+                if(frame != 4)
                 {
-                    frame = 2;
-                }
-                if(NowFrame == 2)
-                {
-                    frame = 3;
-                }
-                if(NowFrame == 3)
-                {
-                    frame = 4;
-                }
-                if(NowFrame == 4)
-                {
-                    frame = 1;
+                    if(NowFrame == 1)
+                    {
+                        frame = 2;
+                    }
+                    if(NowFrame == 2)
+                    {
+                        frame = 3;
+                    }
+                    if(NowFrame == 3)
+                    {
+                        frame = 4;
+                    }
                 }
             }
 
             int GetX() { return x; }
             int GetY() { return y; }
             int GetFrame() { return frame; }      
+            bool IsCollect() { return IsCollecting; }
     };
 
     class Trees
@@ -162,6 +233,10 @@
             int frame;
             
         public:
+            Trees()
+            {
+                frame = 1;
+            }
             void SetCoordinate(int valueX, int valueY) {x = valueX; y = valueY; }
             void SetFrame(int valueFrame) {frame = valueFrame;}
             void Frames(int NowFrame)
@@ -189,12 +264,13 @@
         int Layout, int Act, int HouseUpgrade, int TreesUpgrade, 
         int VegetablesUpgrade, int HouseUpgradeSelect, 
         int BackgroundX1, int BackgroundX2, int MenuStage, int MapMove, 
-        Collector *collectorArray, Woodcutter *woodcutterArray, Vegetables *vegetablesArray, 
-        Trees *treesArray,
+        Collector *collectorArray, Woodcutter *woodcutterArray, Archer *archerArray, 
+        Vegetables *vegetablesArray, Trees *treesArray,
 
         HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, 
         HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap,
-        HDC BACKGROUNDSmithy, HDC BACKGROUNDUpgradeFirstLvl, HDC BACKGROUNDUpgradeSecondLvl, 
+        HDC BACKGROUNDSmithy, HDC Blacksmith1, HDC Blacksmith2, HDC Blacksmith3, HDC Blacksmith4,
+        HDC BACKGROUNDUpgradeFirstLvl, HDC BACKGROUNDUpgradeSecondLvl, 
         HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUNDUpgradeBuying, HDC BACKGROUNDMap, 
         HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX,
         HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, 
@@ -212,7 +288,8 @@
     void KeyboardControls(
         int *Layout, int *Act, int *HouseUpgrade, int *TreesUpgrade, int *VegetablesUpgrade,
         int *HouseUpgradeSelect, int *BackgroundX1, int *BackgroundX2, int *MenuStage, int *MapMove,
-        Collector *collectorArray, Woodcutter *woodcutterArray, Vegetables *vegetablesArray, Trees *treesArray,
+        Collector *collectorArray, Woodcutter *woodcutterArray, Archer *archerArray, 
+        Vegetables *vegetablesArray, Trees *treesArray,
 
         Button NewGame, Button Left, Button Right, Button Smithy, Button Upgrade, 
         Button Map, Button Upgr, Button UpgradeFirstLvl, Button UpgradeSecondLvl, 
@@ -224,7 +301,8 @@
 
         HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, 
         HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap,
-        HDC BACKGROUNDSmithy, HDC BACKGROUNDUpgradeFirstLvl, HDC BACKGROUNDUpgradeSecondLvl, 
+        HDC BACKGROUNDSmithy, HDC Blacksmith1, HDC Blacksmith2, HDC Blacksmith3, HDC Blacksmith4,
+        HDC BACKGROUNDUpgradeFirstLvl, HDC BACKGROUNDUpgradeSecondLvl, 
         HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUNDUpgradeBuying, HDC BACKGROUNDMap, 
         HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX,
         HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, 
@@ -252,7 +330,7 @@
         int Act = 1;
         int HouseUpgrade = 0; 
         int TreesUpgrade = 1;
-        int VegetablesUpgrade = 1;
+        int VegetablesUpgrade = 2;
         int HouseUpgradeSelect = 1;
         int BackgroundX1 = 0;
         int BackgroundX2 = 1296;
@@ -261,22 +339,10 @@
         int Time = 0;
 
         Collector collectorArray[6];
-        for(int i = 0; i<7; i++)
-        {
-            collectorArray[i].SetState(0);
-        }
-
         Woodcutter woodcutterArray[3];
-        for(int i = 0; i<4; i++)
-        {
-            woodcutterArray[i].SetState(0);
-        }
+        Archer archerArray[3];
 
         Vegetables vegetablesArray[6]; 
-        for(int i = 0; i<7; i++)
-        {
-            vegetablesArray[i].SetFrame(1);
-        }
         vegetablesArray[0].SetCoordinate(288, 200);
         vegetablesArray[1].SetCoordinate(335, 184);
         vegetablesArray[2].SetCoordinate(380, 195);
@@ -285,10 +351,6 @@
         vegetablesArray[5].SetCoordinate(520, 200);
 
         Trees treesArray[3];
-        for(int i = 0; i<4; i++)
-        {
-            treesArray[i].SetFrame(1);
-        }
         treesArray[0].SetCoordinate(596, 91);
         treesArray[1].SetCoordinate(723, 91);
         treesArray[2].SetCoordinate(849, 91);
@@ -305,6 +367,11 @@
         HDC BTNMap = txLoadImage("Resources\\Images\\BTN_Map.bmp");
 
         HDC BACKGROUNDSmithy = txLoadImage("Resources\\Images\\BACKGROUND_Smithy.bmp");
+        HDC Blacksmith1 = txLoadImage("Resources\\Images\\Blacksmith1.bmp");
+        HDC Blacksmith2 = txLoadImage("Resources\\Images\\Blacksmith2.bmp");
+        HDC Blacksmith3 = txLoadImage("Resources\\Images\\Blacksmith3.bmp");
+        HDC Blacksmith4 = txLoadImage("Resources\\Images\\Blacksmith4.bmp");
+
 
         HDC BACKGROUNDUpgradeFirstLvl = txLoadImage("Resources\\Images\\BACKGROUND_Upgrade_FirstLvl.bmp");
         HDC BACKGROUNDUpgradeSecondLvl = txLoadImage("Resources\\Images\\BACKGROUND_Upgrade_SecondLvl.bmp");
@@ -429,6 +496,7 @@
 
         Load(&Act, &HouseUpgrade, &TreesUpgrade, &VegetablesUpgrade);
         
+        srand(time(NULL));
         while(TRUE)
         {
             Time++;
@@ -449,34 +517,64 @@
             }
 
             txBegin();
-                Painting(Layout, Act, HouseUpgrade, TreesUpgrade, VegetablesUpgrade, HouseUpgradeSelect, BackgroundX1, BackgroundX2, MenuStage, MapMove, collectorArray, woodcutterArray, vegetablesArray, treesArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Vegetable11, Vegetable12, Vegetable13, Vegetable14, Vegetable21, Vegetable22, Vegetable23, Vegetable24, Vegetable31, Vegetable32, Vegetable33, Vegetable34, Tree11, Tree12, Tree13, Tree21, Tree22, Tree23, Tree31, Tree32, Tree33, Collector011, Collector012, Collector013, Collector111, Collector112, Collector113, Collector021, Collector022, Collector023, Collector121, Collector122, Collector123, Woodcutter011, Woodcutter012, Woodcutter013, Woodcutter111, Woodcutter112, Woodcutter113, Woodcutter021, Woodcutter022, Woodcutter023, Woodcutter121, Woodcutter122, Woodcutter123, Archer011, Archer012, Archer013, Archer111, Archer112, Archer113, Archer021, Archer022, Archer023, Archer121, Archer122, Archer123);
+                Painting(Layout, Act, HouseUpgrade, TreesUpgrade, VegetablesUpgrade, HouseUpgradeSelect, BackgroundX1, BackgroundX2, MenuStage, MapMove, collectorArray, woodcutterArray, archerArray, vegetablesArray, treesArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap, BACKGROUNDSmithy, Blacksmith1, Blacksmith2, Blacksmith3, Blacksmith4, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Vegetable11, Vegetable12, Vegetable13, Vegetable14, Vegetable21, Vegetable22, Vegetable23, Vegetable24, Vegetable31, Vegetable32, Vegetable33, Vegetable34, Tree11, Tree12, Tree13, Tree21, Tree22, Tree23, Tree31, Tree32, Tree33, Collector011, Collector012, Collector013, Collector111, Collector112, Collector113, Collector021, Collector022, Collector023, Collector121, Collector122, Collector123, Woodcutter011, Woodcutter012, Woodcutter013, Woodcutter111, Woodcutter112, Woodcutter113, Woodcutter021, Woodcutter022, Woodcutter023, Woodcutter121, Woodcutter122, Woodcutter123, Archer011, Archer012, Archer013, Archer111, Archer112, Archer113, Archer021, Archer022, Archer023, Archer121, Archer122, Archer123);
             txEnd();
 
             if(MapMove == 0)
             {
-                KeyboardControls(&Layout, &Act, &HouseUpgrade, &TreesUpgrade, &VegetablesUpgrade, &HouseUpgradeSelect, &BackgroundX1, &BackgroundX2, &MenuStage, &MapMove, collectorArray, woodcutterArray, vegetablesArray, treesArray, NewGame, Left, Right, Smithy, Upgrade, Map, Upgr, UpgradeFirstLvl, UpgradeSecondLvl, UpgradeThirdLvl, UpgradeBack, VFirstAct, XFirstAct, VSecondAct, XSecondAct, VThirdAct, XThirdAct, VFourthAct, XFourthAct, VFifthAct, XFifthAct, MapBack, GameFirstAction, GameSecondAction, GameThirdAction, GameFourthAction, GameFifthAction, GameSixthAction, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Vegetable11, Vegetable12, Vegetable13, Vegetable14, Vegetable21, Vegetable22, Vegetable23, Vegetable24, Vegetable31, Vegetable32, Vegetable33, Vegetable34, Tree11, Tree12, Tree13, Tree21, Tree22, Tree23, Tree31, Tree32, Tree33, Collector011, Collector012, Collector013, Collector111, Collector112, Collector113, Collector021, Collector022, Collector023, Collector121, Collector122, Collector123, Woodcutter011, Woodcutter012, Woodcutter013, Woodcutter111, Woodcutter112, Woodcutter113, Woodcutter021, Woodcutter022, Woodcutter023, Woodcutter121, Woodcutter122, Woodcutter123, Archer011, Archer012, Archer013, Archer111, Archer112, Archer113, Archer021, Archer022, Archer023, Archer121, Archer122, Archer123 );
+                KeyboardControls(&Layout, &Act, &HouseUpgrade, &TreesUpgrade, &VegetablesUpgrade, &HouseUpgradeSelect, &BackgroundX1, &BackgroundX2, &MenuStage, &MapMove, collectorArray, woodcutterArray, archerArray, vegetablesArray, treesArray, NewGame, Left, Right, Smithy, Upgrade, Map, Upgr, UpgradeFirstLvl, UpgradeSecondLvl, UpgradeThirdLvl, UpgradeBack, VFirstAct, XFirstAct, VSecondAct, XSecondAct, VThirdAct, XThirdAct, VFourthAct, XFourthAct, VFifthAct, XFifthAct, MapBack, GameFirstAction, GameSecondAction, GameThirdAction, GameFourthAction, GameFifthAction, GameSixthAction, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap, BACKGROUNDSmithy, Blacksmith1, Blacksmith2, Blacksmith3, Blacksmith4, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Vegetable11, Vegetable12, Vegetable13, Vegetable14, Vegetable21, Vegetable22, Vegetable23, Vegetable24, Vegetable31, Vegetable32, Vegetable33, Vegetable34, Tree11, Tree12, Tree13, Tree21, Tree22, Tree23, Tree31, Tree32, Tree33, Collector011, Collector012, Collector013, Collector111, Collector112, Collector113, Collector021, Collector022, Collector023, Collector121, Collector122, Collector123, Woodcutter011, Woodcutter012, Woodcutter013, Woodcutter111, Woodcutter112, Woodcutter113, Woodcutter021, Woodcutter022, Woodcutter023, Woodcutter121, Woodcutter122, Woodcutter123, Archer011, Archer012, Archer013, Archer111, Archer112, Archer113, Archer021, Archer022, Archer023, Archer121, Archer122, Archer123 );
             }
 
             if(Layout == 5)
             {
                 if(Time%5 == 0)
                 {
+                    if(vegetablesArray[0].GetFrame() == 4)
+                    {
+                        if(!vegetablesArray[0].IsCollect())
+                        {
+                            for(int i = 0; i<7; i++)
+                            {
+                                if(collectorArray[i].Collect() == 1)
+                                {
+                                    if(collectorArray[i].GetState() == 1)
+                                    {
+                                        collectorArray[i].SetAnimation(2);
+                                        printf("%i", 12);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     for(int i = 0; i<7; i++)
                     {
-                        collectorArray[i].Frames(collectorArray[i].GetFrame());
-                        collectorArray[i].SetCoordinate(collectorArray[i].GetX()+7, 92);
+                        if(collectorArray[i].GetAnimation() != 2)
+                        {
+                            collectorArray[i].Frames(collectorArray[i].GetFrame());
+                            collectorArray[i].SetCoordinate(collectorArray[i].GetX()+7, 194);
+                        }
                     }
                     for(int i = 0; i<4; i++)
                     {
                         woodcutterArray[i].Frames(woodcutterArray[i].GetFrame());
-                        woodcutterArray[i].SetCoordinate(woodcutterArray[i].GetX()+7, 92);
+                        woodcutterArray[i].SetCoordinate(woodcutterArray[i].GetX()+7, 194);
+                    }
+                    for(int i = 0; i<4; i++)
+                    {
+                        archerArray[i].Frames(archerArray[i].GetFrame());
+                        archerArray[i].SetCoordinate(archerArray[i].GetX()+7, 530);
                     }
                 }
-                if(Time%200 == 0)
+                
+                if(Time%20 == 0)
                 {
                     for(int i = 0; i<7; i++)
                     {
-                        vegetablesArray[i].Frames(vegetablesArray[i].GetFrame());
+                        if(rand()%3+1 == 1)
+                        {
+                            vegetablesArray[i].Frames(vegetablesArray[i].GetFrame());
+                        }
                     }
                 }
             }
@@ -485,9 +583,9 @@
         
     }
 
-    void Painting(int Layout, int Act, int HouseUpgrade, int TreesUpgrade, int VegetablesUpgrade, int HouseUpgradeSelect, int BackgroundX1, int BackgroundX2, int MenuStage, int MapMove, Collector *collectorArray, Woodcutter *woodcutterArray, Vegetables *vegetablesArray, Trees *treesArray, HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap, HDC BACKGROUNDSmithy, HDC BACKGROUNDUpgradeFirstLvl, HDC BACKGROUNDUpgradeSecondLvl, HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUNDUpgradeBuying, HDC BACKGROUNDMap, HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX, HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction, HDC Vegetable11, HDC Vegetable12, HDC Vegetable13, HDC Vegetable14, HDC Vegetable21, HDC Vegetable22, HDC Vegetable23, HDC Vegetable24, HDC Vegetable31, HDC Vegetable32, HDC Vegetable33, HDC Vegetable34, HDC Tree11, HDC Tree12, HDC Tree13, HDC Tree21, HDC Tree22, HDC Tree23, HDC Tree31, HDC Tree32, HDC Tree33, HDC Collector011, HDC Collector012, HDC Collector013, HDC Collector111, HDC Collector112, HDC Collector113, HDC Collector021, HDC Collector022, HDC Collector023, HDC Collector121, HDC Collector122, HDC Collector123, HDC Woodcutter011, HDC Woodcutter012, HDC Woodcutter013, HDC Woodcutter111, HDC Woodcutter112, HDC Woodcutter113, HDC Woodcutter021, HDC Woodcutter022, HDC Woodcutter023, HDC Woodcutter121, HDC Woodcutter122, HDC Woodcutter123, HDC Archer011, HDC Archer012, HDC Archer013, HDC Archer111, HDC Archer112, HDC Archer113, HDC Archer021, HDC Archer022, HDC Archer023, HDC Archer121, HDC Archer122, HDC Archer123)
+    void Painting(int Layout, int Act, int HouseUpgrade, int TreesUpgrade, int VegetablesUpgrade, int HouseUpgradeSelect, int BackgroundX1, int BackgroundX2, int MenuStage, int MapMove, Collector *collectorArray, Woodcutter *woodcutterArray, Archer *archerArray, Vegetables *vegetablesArray, Trees *treesArray, HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap, HDC BACKGROUNDSmithy, HDC Blacksmith1, HDC Blacksmith2, HDC Blacksmith3, HDC Blacksmith4, HDC BACKGROUNDUpgradeFirstLvl, HDC BACKGROUNDUpgradeSecondLvl, HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUNDUpgradeBuying, HDC BACKGROUNDMap, HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX, HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction, HDC Vegetable11, HDC Vegetable12, HDC Vegetable13, HDC Vegetable14, HDC Vegetable21, HDC Vegetable22, HDC Vegetable23, HDC Vegetable24, HDC Vegetable31, HDC Vegetable32, HDC Vegetable33, HDC Vegetable34, HDC Tree11, HDC Tree12, HDC Tree13, HDC Tree21, HDC Tree22, HDC Tree23, HDC Tree31, HDC Tree32, HDC Tree33, HDC Collector011, HDC Collector012, HDC Collector013, HDC Collector111, HDC Collector112, HDC Collector113, HDC Collector021, HDC Collector022, HDC Collector023, HDC Collector121, HDC Collector122, HDC Collector123, HDC Woodcutter011, HDC Woodcutter012, HDC Woodcutter013, HDC Woodcutter111, HDC Woodcutter112, HDC Woodcutter113, HDC Woodcutter021, HDC Woodcutter022, HDC Woodcutter023, HDC Woodcutter121, HDC Woodcutter122, HDC Woodcutter123, HDC Archer011, HDC Archer012, HDC Archer013, HDC Archer111, HDC Archer112, HDC Archer113, HDC Archer021, HDC Archer022, HDC Archer023, HDC Archer121, HDC Archer122, HDC Archer123)
     {
-        vegetablesArray[0].SetCoordinate(288, 200);
+        //vegetablesArray[0].SetCoordinate(288, 200);
         txSetFillColor(TX_WHITE);
         txClear();
         if(Layout == 0)
@@ -524,6 +622,27 @@
         if(Layout == 2)
         {
             txBitBlt(txDC(), 0, 0, 1296, 720, BACKGROUNDSmithy, 0, 0);
+            int BlacksmithyFrame = 1;
+            if(BlacksmithyFrame == 1)
+            {
+                txAlphaBlend(txDC(), 0, 0, 1296, 720, Blacksmith1, 0, 0, 1);
+                BlacksmithyFrame = 2;
+            }
+            if(BlacksmithyFrame == 2)
+            {
+                txAlphaBlend(txDC(), 0, 0, 1296, 720, Blacksmith2, 0, 0, 1);
+                BlacksmithyFrame = 3;
+            }
+            if(BlacksmithyFrame == 3)
+            {
+                txAlphaBlend(txDC(), 0, 0, 1296, 720, Blacksmith3, 0, 0, 1);
+                BlacksmithyFrame = 4;
+            }
+            if(BlacksmithyFrame == 4)
+            {
+                txAlphaBlend(txDC(), 0, 0, 1296, 720, Blacksmith4, 0, 0, 1);
+                BlacksmithyFrame = 1;
+            }
         }
 
         if(Layout == 3)
@@ -728,6 +847,21 @@
                             txAlphaBlend(txDC(), collectorArray[i].GetX(), collectorArray[i].GetY(), 57, 93, Collector013, 0, 0, 1);
                         }
                     }
+                    if(collectorArray[i].GetAnimation() == 2)
+                    {
+                        if(collectorArray[i].GetFrame() == 1)
+                        {
+                            txAlphaBlend(txDC(), collectorArray[i].GetX(), collectorArray[i].GetY(), 69, 93, Collector021, 0, 0, 1);
+                        }
+                        if(collectorArray[i].GetFrame() == 2)
+                        {
+                            txAlphaBlend(txDC(), collectorArray[i].GetX(), collectorArray[i].GetY(), 69, 93, Collector022, 0, 0, 1);
+                        }
+                        if(collectorArray[i].GetFrame() == 3)
+                        {
+                            txAlphaBlend(txDC(), collectorArray[i].GetX(), collectorArray[i].GetY(), 69, 93, Collector023, 0, 0, 1);
+                        }
+                    }
                 }
             }
 
@@ -752,10 +886,32 @@
                     }
                 }
             }
+
+            for(int i = 0; i<4; i++)
+            {
+                if(archerArray[i].GetState() == 1)
+                {
+                    if(archerArray[i].GetAnimation() == 1)
+                    {
+                        if(archerArray[i].GetFrame() == 1)
+                        {
+                            txAlphaBlend(txDC(), archerArray[i].GetX(), archerArray[i].GetY(), 48, 90, Archer011, 0, 0, 1);
+                        }
+                        if(archerArray[i].GetFrame() == 2)
+                        {
+                            txAlphaBlend(txDC(), archerArray[i].GetX(), archerArray[i].GetY(), 48, 90, Archer012, 0, 0, 1);
+                        }
+                        if(archerArray[i].GetFrame() == 3)
+                        {
+                            txAlphaBlend(txDC(), archerArray[i].GetX(), archerArray[i].GetY(), 48, 90, Archer013, 0, 0, 1);
+                        }
+                    }
+                }
+            }
         }
     }
  
-    void KeyboardControls(int *Layout, int *Act, int *HouseUpgrade, int *TreesUpgrade, int *VegetablesUpgrade, int *HouseUpgradeSelect, int *BackgroundX1, int *BackgroundX2, int *MenuStage, int *MapMove, Collector *collectorArray, Woodcutter *woodcutterArray, Vegetables *vegetablesArray, Trees *treesArray, Button NewGame, Button Left, Button Right, Button Smithy, Button Upgrade, Button Map, Button Upgr, Button UpgradeFirstLvl, Button UpgradeSecondLvl, Button UpgradeThirdLvl, Button UpgradeBack, Button VFirstAct, Button XFirstAct, Button VSecondAct, Button XSecondAct, Button VThirdAct, Button XThirdAct, Button VFourthAct, Button XFourthAct, Button VFifthAct, Button XFifthAct, Button MapBack, Button GameFirstAction, Button GameSecondAction, Button GameThirdAction, Button GameFourthAction, Button GameFifthAction, Button GameSixthAction, HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap, HDC BACKGROUNDSmithy, HDC BACKGROUNDUpgradeFirstLvl, HDC BACKGROUNDUpgradeSecondLvl, HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUNDUpgradeBuying, HDC BACKGROUNDMap, HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX, HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction, HDC Vegetable11, HDC Vegetable12, HDC Vegetable13, HDC Vegetable14, HDC Vegetable21, HDC Vegetable22, HDC Vegetable23, HDC Vegetable24, HDC Vegetable31, HDC Vegetable32, HDC Vegetable33, HDC Vegetable34, HDC Tree11, HDC Tree12, HDC Tree13, HDC Tree21, HDC Tree22, HDC Tree23, HDC Tree31, HDC Tree32, HDC Tree33, HDC Collector011, HDC Collector012, HDC Collector013, HDC Collector111, HDC Collector112, HDC Collector113, HDC Collector021, HDC Collector022, HDC Collector023, HDC Collector121, HDC Collector122, HDC Collector123, HDC Woodcutter011, HDC Woodcutter012, HDC Woodcutter013, HDC Woodcutter111, HDC Woodcutter112, HDC Woodcutter113, HDC Woodcutter021, HDC Woodcutter022, HDC Woodcutter023, HDC Woodcutter121, HDC Woodcutter122, HDC Woodcutter123, HDC Archer011, HDC Archer012, HDC Archer013, HDC Archer111, HDC Archer112, HDC Archer113, HDC Archer021, HDC Archer022, HDC Archer023, HDC Archer121, HDC Archer122, HDC Archer123)
+    void KeyboardControls(int *Layout, int *Act, int *HouseUpgrade, int *TreesUpgrade, int *VegetablesUpgrade, int *HouseUpgradeSelect, int *BackgroundX1, int *BackgroundX2, int *MenuStage, int *MapMove, Collector *collectorArray, Woodcutter *woodcutterArray, Archer *archerArray, Vegetables *vegetablesArray, Trees *treesArray, Button NewGame, Button Left, Button Right, Button Smithy, Button Upgrade, Button Map, Button Upgr, Button UpgradeFirstLvl, Button UpgradeSecondLvl, Button UpgradeThirdLvl, Button UpgradeBack, Button VFirstAct, Button XFirstAct, Button VSecondAct, Button XSecondAct, Button VThirdAct, Button XThirdAct, Button VFourthAct, Button XFourthAct, Button VFifthAct, Button XFifthAct, Button MapBack, Button GameFirstAction, Button GameSecondAction, Button GameThirdAction, Button GameFourthAction, Button GameFifthAction, Button GameSixthAction, HDC BACKGROUNDMainMenu, HDC BACKGROUNDMenu, HDC UIMenu, HDC BTNLeft, HDC BTNRight, HDC BTNSmithy, HDC BTNUpgrade, HDC BTNMap, HDC BACKGROUNDSmithy, HDC Blacksmith1, HDC Blacksmith2, HDC Blacksmith3, HDC Blacksmith4, HDC BACKGROUNDUpgradeFirstLvl, HDC BACKGROUNDUpgradeSecondLvl, HDC BACKGROUNDUpgradeThirdLvl, HDC BACKGROUNDUpgradeBuying, HDC BACKGROUNDMap, HDC UICloudAct1, HDC UICloudAct2, HDC UICloudAct3, HDC UICloudAct4, HDC BTNV, HDC BTNX, HDC BACKGROUNDGame, HDC BACKGROUNDFirstHouse, HDC BACKGROUNDSecondHouse, HDC BACKGROUNDThirdHouse, HDC BTNFirstActAction, HDC BTNSecondActAction, HDC BTNThirdActAction, HDC BTNFourthAndFifthActAction, HDC Vegetable11, HDC Vegetable12, HDC Vegetable13, HDC Vegetable14, HDC Vegetable21, HDC Vegetable22, HDC Vegetable23, HDC Vegetable24, HDC Vegetable31, HDC Vegetable32, HDC Vegetable33, HDC Vegetable34, HDC Tree11, HDC Tree12, HDC Tree13, HDC Tree21, HDC Tree22, HDC Tree23, HDC Tree31, HDC Tree32, HDC Tree33, HDC Collector011, HDC Collector012, HDC Collector013, HDC Collector111, HDC Collector112, HDC Collector113, HDC Collector021, HDC Collector022, HDC Collector023, HDC Collector121, HDC Collector122, HDC Collector123, HDC Woodcutter011, HDC Woodcutter012, HDC Woodcutter013, HDC Woodcutter111, HDC Woodcutter112, HDC Woodcutter113, HDC Woodcutter021, HDC Woodcutter022, HDC Woodcutter023, HDC Woodcutter121, HDC Woodcutter122, HDC Woodcutter123, HDC Archer011, HDC Archer012, HDC Archer013, HDC Archer111, HDC Archer112, HDC Archer113, HDC Archer021, HDC Archer022, HDC Archer023, HDC Archer121, HDC Archer122, HDC Archer123)
     {
         if (GetAsyncKeyState(VK_SPACE))
         {
@@ -770,7 +926,7 @@
                         *BackgroundX2 = *BackgroundX2+10;
 
                         txBegin();
-                        Painting(*Layout, *Act, *HouseUpgrade, *TreesUpgrade, *VegetablesUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, collectorArray, woodcutterArray, vegetablesArray, treesArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Vegetable11, Vegetable12, Vegetable13, Vegetable14, Vegetable21, Vegetable22, Vegetable23, Vegetable24, Vegetable31, Vegetable32, Vegetable33, Vegetable34, Tree11, Tree12, Tree13, Tree21, Tree22, Tree23, Tree31, Tree32, Tree33, Collector011, Collector012, Collector013, Collector111, Collector112, Collector113, Collector021, Collector022, Collector023, Collector121, Collector122, Collector123, Woodcutter011, Woodcutter012, Woodcutter013, Woodcutter111, Woodcutter112, Woodcutter113, Woodcutter021, Woodcutter022, Woodcutter023, Woodcutter121, Woodcutter122, Woodcutter123, Archer011, Archer012, Archer013, Archer111, Archer112, Archer113, Archer021, Archer022, Archer023, Archer121, Archer122, Archer123);
+                        Painting(*Layout, *Act, *HouseUpgrade, *TreesUpgrade, *VegetablesUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, collectorArray, woodcutterArray, archerArray, vegetablesArray, treesArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap, BACKGROUNDSmithy, Blacksmith1, Blacksmith2, Blacksmith3, Blacksmith4, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Vegetable11, Vegetable12, Vegetable13, Vegetable14, Vegetable21, Vegetable22, Vegetable23, Vegetable24, Vegetable31, Vegetable32, Vegetable33, Vegetable34, Tree11, Tree12, Tree13, Tree21, Tree22, Tree23, Tree31, Tree32, Tree33, Collector011, Collector012, Collector013, Collector111, Collector112, Collector113, Collector021, Collector022, Collector023, Collector121, Collector122, Collector123, Woodcutter011, Woodcutter012, Woodcutter013, Woodcutter111, Woodcutter112, Woodcutter113, Woodcutter021, Woodcutter022, Woodcutter023, Woodcutter121, Woodcutter122, Woodcutter123, Archer011, Archer012, Archer013, Archer111, Archer112, Archer113, Archer021, Archer022, Archer023, Archer121, Archer122, Archer123);
                         txEnd();
                     }
                     Sleep(500);
@@ -807,7 +963,7 @@
                     *BackgroundX2 = *BackgroundX2-10;
 
                     txBegin();
-                    Painting(*Layout, *Act, *HouseUpgrade, *TreesUpgrade, *VegetablesUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, collectorArray, woodcutterArray, vegetablesArray, treesArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap, BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Vegetable11, Vegetable12, Vegetable13, Vegetable14, Vegetable21, Vegetable22, Vegetable23, Vegetable24, Vegetable31, Vegetable32, Vegetable33, Vegetable34, Tree11, Tree12, Tree13, Tree21, Tree22, Tree23, Tree31, Tree32, Tree33, Collector011, Collector012, Collector013, Collector111, Collector112, Collector113, Collector021, Collector022, Collector023, Collector121, Collector122, Collector123, Woodcutter011, Woodcutter012, Woodcutter013, Woodcutter111, Woodcutter112, Woodcutter113, Woodcutter021, Woodcutter022, Woodcutter023, Woodcutter121, Woodcutter122, Woodcutter123, Archer011, Archer012, Archer013, Archer111, Archer112, Archer113, Archer021, Archer022, Archer023, Archer121, Archer122, Archer123);
+                    Painting(*Layout, *Act, *HouseUpgrade, *TreesUpgrade, *VegetablesUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, collectorArray, woodcutterArray, archerArray, vegetablesArray, treesArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap, BACKGROUNDSmithy, Blacksmith1, Blacksmith2, Blacksmith3, Blacksmith4, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Vegetable11, Vegetable12, Vegetable13, Vegetable14, Vegetable21, Vegetable22, Vegetable23, Vegetable24, Vegetable31, Vegetable32, Vegetable33, Vegetable34, Tree11, Tree12, Tree13, Tree21, Tree22, Tree23, Tree31, Tree32, Tree33, Collector011, Collector012, Collector013, Collector111, Collector112, Collector113, Collector021, Collector022, Collector023, Collector121, Collector122, Collector123, Woodcutter011, Woodcutter012, Woodcutter013, Woodcutter111, Woodcutter112, Woodcutter113, Woodcutter021, Woodcutter022, Woodcutter023, Woodcutter121, Woodcutter122, Woodcutter123, Archer011, Archer012, Archer013, Archer111, Archer112, Archer113, Archer021, Archer022, Archer023, Archer121, Archer122, Archer123);
                     txEnd();
                 }
                 *MenuStage = *MenuStage-1;
@@ -827,7 +983,7 @@
                     *BackgroundX2 = *BackgroundX2+10;
 
                     txBegin();
-                    Painting(*Layout, *Act, *HouseUpgrade, *TreesUpgrade, *VegetablesUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, collectorArray, woodcutterArray, vegetablesArray, treesArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Vegetable11, Vegetable12, Vegetable13, Vegetable14, Vegetable21, Vegetable22, Vegetable23, Vegetable24, Vegetable31, Vegetable32, Vegetable33, Vegetable34, Tree11, Tree12, Tree13, Tree21, Tree22, Tree23, Tree31, Tree32, Tree33, Collector011, Collector012, Collector013, Collector111, Collector112, Collector113, Collector021, Collector022, Collector023, Collector121, Collector122, Collector123, Woodcutter011, Woodcutter012, Woodcutter013, Woodcutter111, Woodcutter112, Woodcutter113, Woodcutter021, Woodcutter022, Woodcutter023, Woodcutter121, Woodcutter122, Woodcutter123, Archer011, Archer012, Archer013, Archer111, Archer112, Archer113, Archer021, Archer022, Archer023, Archer121, Archer122, Archer123);
+                    Painting(*Layout, *Act, *HouseUpgrade, *TreesUpgrade, *VegetablesUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, collectorArray, woodcutterArray, archerArray, vegetablesArray, treesArray, BACKGROUNDMainMenu, BACKGROUNDMenu, UIMenu, BTNLeft, BTNRight, BTNSmithy, Blacksmith1, Blacksmith2, Blacksmith3, Blacksmith4, BTNUpgrade, BTNMap,BACKGROUNDSmithy, BACKGROUNDUpgradeFirstLvl, BACKGROUNDUpgradeSecondLvl, BACKGROUNDUpgradeThirdLvl, BACKGROUNDUpgradeBuying, BACKGROUNDMap, UICloudAct1, UICloudAct2, UICloudAct3, UICloudAct4, BTNV, BTNX,BACKGROUNDGame, BACKGROUNDFirstHouse, BACKGROUNDSecondHouse, BACKGROUNDThirdHouse, BTNFirstActAction, BTNSecondActAction, BTNThirdActAction, BTNFourthAndFifthActAction, Vegetable11, Vegetable12, Vegetable13, Vegetable14, Vegetable21, Vegetable22, Vegetable23, Vegetable24, Vegetable31, Vegetable32, Vegetable33, Vegetable34, Tree11, Tree12, Tree13, Tree21, Tree22, Tree23, Tree31, Tree32, Tree33, Collector011, Collector012, Collector013, Collector111, Collector112, Collector113, Collector021, Collector022, Collector023, Collector121, Collector122, Collector123, Woodcutter011, Woodcutter012, Woodcutter013, Woodcutter111, Woodcutter112, Woodcutter113, Woodcutter021, Woodcutter022, Woodcutter023, Woodcutter121, Woodcutter122, Woodcutter123, Archer011, Archer012, Archer013, Archer111, Archer112, Archer113, Archer021, Archer022, Archer023, Archer121, Archer122, Archer123);
                     txEnd();
                 }
                 *MenuStage = *MenuStage+1;
@@ -1051,8 +1207,6 @@
                     {
                         collectorArray[i].SetState(1);
                         collectorArray[i].SetCoordinate(139, 194);
-                        collectorArray[i].SetAnimation(1);
-                        collectorArray[i].SetFrame(1);
                         break;
                     }
                 }
@@ -1069,8 +1223,19 @@
                     {
                         collectorArray[i].SetState(1);
                         collectorArray[i].SetCoordinate(139, 194);
-                        collectorArray[i].SetAnimation(1);
-                        collectorArray[i].SetFrame(1);
+                        break;
+                    }
+                }
+                Sleep(250);
+            }
+            if(GameFifthAction.IsClicked(*Layout))
+            {
+                for(int i = 0; i < 4; i++)
+                {
+                    if(archerArray[i].GetState() == 0)
+                    {
+                        archerArray[i].SetState(1);
+                        archerArray[i].SetCoordinate(139, 530);
                         break;
                     }
                 }
@@ -1087,8 +1252,6 @@
                     {
                         collectorArray[i].SetState(1);
                         collectorArray[i].SetCoordinate(139, 194);
-                        collectorArray[i].SetAnimation(1);
-                        collectorArray[i].SetFrame(1);
                         break;
                     }
                 }
@@ -1103,8 +1266,21 @@
                     {
                         woodcutterArray[i].SetState(1);
                         woodcutterArray[i].SetCoordinate(139, 194);
-                        woodcutterArray[i].SetAnimation(1);
-                        woodcutterArray[i].SetFrame(1);
+                        break;
+                    }
+                }
+                Sleep(250);
+            }
+
+            if(GameFifthAction.IsClicked(*Layout))
+            {
+                for(int i = 0; i < 4; i++)
+                {
+                    if(archerArray[i].GetState() == 0)
+                    {
+                        printf("%i", i);
+                        archerArray[i].SetState(1);
+                        archerArray[i].SetCoordinate(139, 530);
                         break;
                     }
                 }
@@ -1121,15 +1297,13 @@
                     {
                         collectorArray[i].SetState(1);
                         collectorArray[i].SetCoordinate(139, 194);
-                        collectorArray[i].SetAnimation(1);
-                        collectorArray[i].SetFrame(1);
                         break;
                     }
                 }
                 Sleep(250);
             }
 
-            if(GameThirdAction.IsClicked(*Layout))
+            if(GameSecondAction.IsClicked(*Layout))
             {
                 for(int i = 0; i < 4; i++)
                 {
@@ -1137,22 +1311,25 @@
                     {
                         woodcutterArray[i].SetState(1);
                         woodcutterArray[i].SetCoordinate(139, 194);
-                        woodcutterArray[i].SetAnimation(1);
-                        woodcutterArray[i].SetFrame(1);
                         break;
                     }
                 }
                 Sleep(250);
             }
-        }
 
-        if(GetAsyncKeyState('Q'))
-        {
-            printf("%i", *Act);
-        }
-        if(GetAsyncKeyState('E'))
-        {
-            printf("%i", *HouseUpgrade);
+            if(GameFifthAction.IsClicked(*Layout))
+            {
+                for(int i = 0; i < 7; i++)
+                {
+                    if(archerArray[i].GetState() == 0)
+                    {
+                        archerArray[i].SetState(1);
+                        archerArray[i].SetCoordinate(139, 530);
+                        break;
+                    }
+                }
+                Sleep(250);
+            }
         }
     }
 
