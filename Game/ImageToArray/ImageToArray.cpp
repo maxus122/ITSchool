@@ -80,35 +80,3 @@
         }
     }
 
-    /*void Save(int i, COLORREF Color, HDC image, char *Text, char *XText, char *YText, char *ColorText)
-    {
-        int R, G, B;
-        char RText[LEN];
-        char GText[LEN];
-        char BText[LEN];
-        strcpy(Text, "\n");
-        for(int i2 = 0; i2<1296; i2++)
-        {
-            itoa(i2, XText, 10);
-            itoa(i, YText, 10);
-            strcat(Text, "txSetPixel(");
-            strcat(Text, XText);
-            strcat(Text, ", ");
-            strcat(Text, YText);
-            strcat(Text, ", RGB(");
-            Color = txGetPixel(i2, i);
-            R = GetRValue(Color);
-            G = GetGValue(Color);
-            B = GetBValue(Color);
-            itoa(R, RText, 10);
-            itoa(G, GText, 10);
-            itoa(B, BText, 10);
-            strcat(Text, RText);
-            strcat(Text, ", ");
-            strcat(Text, GText);
-            strcat(Text, ", ");
-            strcat(Text, BText);
-            strcat(Text, ")); \n");
-        }
-    }*/
-
