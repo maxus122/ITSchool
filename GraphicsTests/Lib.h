@@ -25,6 +25,7 @@
             }
         }
         txClear();
+        txEnd();
 
         for(int y = 0; y<height; y++)
         {
@@ -33,7 +34,7 @@
                 txSetPixel(x, y, Pixels[x][y]);
             }
         }
-        txEnd();
+        
             
         for(int i = 0; i < height; i++)
         {
