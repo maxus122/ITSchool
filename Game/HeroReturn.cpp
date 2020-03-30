@@ -491,7 +491,6 @@
         Button SmithyUpgrade53(652, 432, 747, 406, 2);
         Button SmithyBack(944, 625, 1050, 657, 2);
 
-
         Button Upgr(431, 557, 646, 611, 3);
         Button UpgradeFirstLvl(66, 171, 261, 236, 3); 
         Button UpgradeSecondLvl(63, 288, 270, 403, 3);
