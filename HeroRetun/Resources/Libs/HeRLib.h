@@ -256,77 +256,46 @@
             int GetFrame() { return frame; }      
     };
 
-    COLORREF **loadImage(int x, int y, int width, int height, string imageText)
+
+
+
+    void drawingCollector()
     {
-        char imagePath[LEN];
-        char *str2char = new char[imageText.length() + 1];
-        strcpy(str2char, imageText.c_str());
 
-        strcpy(imagePath, "Resources\\Images\\");
-        strcat(imagePath, str2char);
-        strcat(imagePath, ".bmp");
-
-        txBegin();
-        HDC image = txLoadImage(imagePath);
-        COLORREF **pixelsArray = new COLORREF*[width]; 
-        for(int i = 0; i<width; i++)
-        {
-            pixelsArray[i] = new COLORREF[height];
-        }
-
-        if(width <= 1296)
-        {
-            txBitBlt(txDC(), 0, 0, width, height, image, 0, 0);
-            for(int i = 0; i<width; i++)
-            {
-                for(int j=0; j<height; j++)
-                {
-                    pixelsArray[i][j] = txGetPixel(i, j);
-                }
-            }
-        }else{
-            for(int i = 0; i < width/1296; i++)
-            {
-                txBitBlt(txDC(), 0, 0, 1296, 720, image, 1296*i, 0);
-                for(int i2 = 0; i2<1296; i2++)
-                {
-                    for(int j=0; j<720; j++)
-                    {
-                        pixelsArray[i2+(1296*i)][j] = txGetPixel(i2, j);
-                    }
-                }
-            }
-        }
-        txDeleteDC(image);
-
-        delete []str2char;
-
-        txClear();
-        txEnd();
-        return pixelsArray;
     }
 
-    void drawingBackground(COLORREF **pixelsArray, int xSource)
+    void drawingWoodcutter()
     {
-        txBegin();
-        for(int y = 0; y<720; y++)
-        {
-            for(int x = 0; x<1296; x++)
-            {
-                txSetPixel(x, y, pixelsArray[x+xSource][y]);
-            }
-        }
-        txEnd();
+        
     }
 
-    void deleteImage(COLORREF *imageArray)
+    void drawingArcher()
     {
-        for(int i = 0; i < 720; i++)
-        {
-            delete[]&imageArray[i]; 
-        }
-        delete []imageArray;
+        
     }
+
+    void drawingTrees()
+    {
+        
+    }
+
+    void drawingVegetables()
+    {
+        
+    }
+
+    void drawingBlacksmith()
+    {
+        
+    }
+
+    void drawingHouses()
+    {
+        
+    }
+
+
+
 
     void painting(
         int Layout, int Act, int HouseUpgrade, int TreesUpgrade, 
@@ -371,11 +340,11 @@
             //txBitBlt(txDC(), 0, 0, BackgroundX2, 720, BACKGROUNDMainMenu, BackgroundX1, 0);
         }
 
-        /*if(Layout == 1)
+        if(Layout == 1)
         {
-            txBitBlt(txDC(), 0, 0, BackgroundX2, 720, BACKGROUNDMenu, BackgroundX1, 0);
+            drawingBackground(BACKGROUND_MainMenu, BackgroundX1);
 
-            if(MapMove != 1)
+            /*if(MapMove != 1)
             {
                 txAlphaBlend(txDC(), 0, 0, 1296, 720, UIMenu, 0, 0, 1);
                 if(MenuStage == 0)
@@ -394,10 +363,10 @@
                     txAlphaBlend(txDC(), 0, 0, 1296, 720, BTNLeft, 0, 0, 1);
                     txAlphaBlend(txDC(), 0, 0, 1296, 720, BTNMap, 0, 0, 1);
                 }
-            }
+            }*/
         }
 
-        if(Layout == 2)
+        /*if(Layout == 2)
         {
             txBitBlt(txDC(), 0, 0, 1296, 720, BACKGROUNDSmithy, 0, 0);
             if(*BlacksmithFrame == 1)
@@ -693,6 +662,93 @@
                 }
             }
         }*/
+    }
+
+     void keyboardControls(
+        int *Layout, int *Act, int *HouseUpgrade, int *TreesUpgrade, int *VegetablesUpgrade, int *HouseUpgradeSelect, 
+        int *BackgroundX1, int *BackgroundX2, int *MenuStage, int *MapMove, int *BlacksmithFrame, Collector *collectorArray,
+        Woodcutter *woodcutterArray, Archer *archerArray, Vegetables *vegetablesArray, Trees *treesArray, 
+        
+        Button NewGame, Button Left, Button Right, Button Smithy, Button Upgrade, Button Map, Button SmithyUpgrade11, 
+        Button SmithyUpgrade12, Button SmithyUpgrade13, Button SmithyUpgrade21, Button SmithyUpgrade22, Button SmithyUpgrade23, 
+        Button SmithyUpgrade31, Button SmithyUpgrade32, Button SmithyUpgrade33, Button SmithyUpgrade41, Button SmithyUpgrade42, 
+        Button SmithyUpgrade43, Button SmithyUpgrade51, Button SmithyUpgrade52, Button SmithyUpgrade53, Button SmithyBack, 
+        Button Upgr, Button UpgradeFirstLvl, Button UpgradeSecondLvl, Button UpgradeThirdLvl, Button UpgradeBack, Button VFirstAct, 
+        Button XFirstAct, Button VSecondAct, Button XSecondAct, Button VThirdAct, Button XThirdAct, Button VFourthAct, 
+        Button XFourthAct, Button VFifthAct, Button XFifthAct, Button MapBack, Button GameFirstAction, Button GameSecondAction, 
+        Button GameThirdAction, Button GameFourthAction, Button GameFifthAction, Button GameSixthAction, 
+        
+        COLORREF **BACKGROUND_MainMenu, COLORREF **BACKGROUND_Menu, COLORREF **BACKGROUND_Smithy, 
+        COLORREF **BACKGROUND_Upgrade_FirstLvl, COLORREF **BACKGROUND_Upgrade_SecondLvl, 
+        COLORREF **BACKGROUND_Upgrade_ThirdLvl, COLORREF **BACKGROUND_Map, COLORREF **BACKGROUND_Game, 
+        COLORREF **UI_Cloud_Act1, COLORREF **UI_Cloud_Act2, COLORREF **UI_Cloud_Act3, 
+        COLORREF **UI_Cloud_Act4, COLORREF **UI_Menu, COLORREF **UI_Smithy_Buying,
+        COLORREF **UI_Smithy_SelectUpgrade, COLORREF **UI_Upgrade_Buying, COLORREF **BTN_FirstAct_Action, 
+        COLORREF **BTN_FourthAndFifthAct_Action, COLORREF **BTN_Left, COLORREF **BTN_Map, COLORREF **BTN_Right, 
+        COLORREF **BTN_SecondAct_Action, COLORREF **BTN_Smithy, COLORREF **BTN_ThirdAct_Action, COLORREF **BTN_Upgrade, 
+        COLORREF **BTN_V, COLORREF **BTN_X, COLORREF **OBJECTS_Blacksmith1, COLORREF **OBJECTS_Blacksmith2,
+        COLORREF **OBJECTS_Blacksmith3, COLORREF **OBJECTS_Blacksmith4, COLORREF **OBJECTS_FirstHouse,
+        COLORREF **OBJECTS_SecondHouse, COLORREF **OBJECTS_ThirdHouse, COLORREF **OBJECTS_Tree_1_1,
+        COLORREF **OBJECTS_Tree_1_2, COLORREF **OBJECTS_Tree_1_3, COLORREF **OBJECTS_Tree_2_1,
+        COLORREF **OBJECTS_Tree_2_2, COLORREF **OBJECTS_Tree_2_3, COLORREF **OBJECTS_Tree_3_1,
+        COLORREF **OBJECTS_Tree_3_2, COLORREF **OBJECTS_Tree_3_3, COLORREF **OBJECTS_Vegetable_1_1,
+        COLORREF **OBJECTS_Vegetable_1_2, COLORREF **OBJECTS_Vegetable_1_3, COLORREF **OBJECTS_Vegetable_1_4,
+        COLORREF **OBJECTS_Vegetable_2_1, COLORREF **OBJECTS_Vegetable_2_2, COLORREF **OBJECTS_Vegetable_2_3,
+        COLORREF **OBJECTS_Vegetable_2_4, COLORREF **OBJECTS_Vegetable_3_1, COLORREF **OBJECTS_Vegetable_3_2, 
+        COLORREF **OBJECTS_Vegetable_3_3, COLORREF **OBJECTS_Vegetable_3_4, COLORREF **Collector_0_1_1,
+        COLORREF **Collector_0_1_2, COLORREF **Collector_0_1_3, COLORREF **Collector_1_1_1, COLORREF **Collector_1_1_2,
+        COLORREF **Collector_1_1_3, COLORREF **Collector_0_2_1, COLORREF **Collector_0_2_2, COLORREF **Collector_0_2_3,
+        COLORREF **Collector_1_2_1, COLORREF **Collector_1_2_2, COLORREF **Collector_1_2_3, COLORREF **Woodcutter_0_1_1,
+        COLORREF **Woodcutter_0_1_2, COLORREF **Woodcutter_0_1_3, COLORREF **Woodcutter_1_1_1, COLORREF **Woodcutter_1_1_2,
+        COLORREF **Woodcutter_1_1_3, COLORREF **Woodcutter_0_2_1, COLORREF **Woodcutter_0_2_2, COLORREF **Woodcutter_0_2_3,
+        COLORREF **Woodcutter_1_2_1, COLORREF **Woodcutter_1_2_2, COLORREF **Woodcutter_1_2_3, COLORREF **Archer_0_1_1,
+        COLORREF **Archer_0_1_2, COLORREF **Archer_0_1_3, COLORREF **Archer_1_1_1, COLORREF **Archer_1_1_2, COLORREF **Archer_1_1_3,
+        COLORREF **Archer_0_2_1, COLORREF **Archer_0_2_2, COLORREF **Archer_0_2_3, COLORREF **Archer_1_2_1, COLORREF **Archer_1_2_2,
+        COLORREF **Archer_1_2_3)
+    {
+        if (GetAsyncKeyState(VK_SPACE))
+        {
+            if (*Layout == 0)
+            {
+                if(*BackgroundX1 != 1290)
+                {
+                    *MapMove = 1;
+                    //for(int i=0; i<129; i++)
+                    //{
+                        *BackgroundX1 = *BackgroundX1+1296;
+                        *BackgroundX2 = *BackgroundX2+1296;
+
+                        txBegin();
+                        painting(*Layout, *Act, *HouseUpgrade, *TreesUpgrade, *VegetablesUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, BlacksmithFrame, collectorArray, woodcutterArray, archerArray, vegetablesArray, treesArray, BACKGROUND_MainMenu, BACKGROUND_Menu, BACKGROUND_Smithy, BACKGROUND_Upgrade_FirstLvl, BACKGROUND_Upgrade_SecondLvl, BACKGROUND_Upgrade_ThirdLvl, BACKGROUND_Map, BACKGROUND_Game, UI_Cloud_Act1, UI_Cloud_Act2, UI_Cloud_Act3, UI_Cloud_Act4, UI_Menu, UI_Smithy_Buying, UI_Smithy_SelectUpgrade, UI_Upgrade_Buying, BTN_FirstAct_Action, BTN_FourthAndFifthAct_Action, BTN_Left,  BTN_Map, BTN_Right, BTN_SecondAct_Action, BTN_Smithy, BTN_ThirdAct_Action, BTN_Upgrade, BTN_V, BTN_X, OBJECTS_Blacksmith1, OBJECTS_Blacksmith2, OBJECTS_Blacksmith3, OBJECTS_Blacksmith4, OBJECTS_FirstHouse, OBJECTS_SecondHouse, OBJECTS_ThirdHouse, OBJECTS_Tree_1_1, OBJECTS_Tree_1_2, OBJECTS_Tree_1_3, OBJECTS_Tree_2_1, OBJECTS_Tree_2_2, OBJECTS_Tree_2_3, OBJECTS_Tree_3_1, OBJECTS_Tree_3_2, OBJECTS_Tree_3_3, OBJECTS_Vegetable_1_1, OBJECTS_Vegetable_1_2, OBJECTS_Vegetable_1_3, OBJECTS_Vegetable_1_4, OBJECTS_Vegetable_2_1, OBJECTS_Vegetable_2_2, OBJECTS_Vegetable_2_3, OBJECTS_Vegetable_2_4, OBJECTS_Vegetable_3_1, OBJECTS_Vegetable_3_2, OBJECTS_Vegetable_3_3, OBJECTS_Vegetable_3_4, Collector_0_1_1, Collector_0_1_2, Collector_0_1_3, Collector_1_1_1, Collector_1_1_2, Collector_1_1_3, Collector_0_2_1, Collector_0_2_2, Collector_0_2_3, Collector_1_2_1, Collector_1_2_2, Collector_1_2_3, Woodcutter_0_1_1, Woodcutter_0_1_2, Woodcutter_0_1_3, Woodcutter_1_1_1, Woodcutter_1_1_2, Woodcutter_1_1_3, Woodcutter_0_2_1, Woodcutter_0_2_2, Woodcutter_0_2_3, Woodcutter_1_2_1, Woodcutter_1_2_2, Woodcutter_1_2_3, Archer_0_1_1, Archer_0_1_2, Archer_0_1_3, Archer_1_1_1, Archer_1_1_2, Archer_1_1_3, Archer_0_2_1, Archer_0_2_2,  Archer_0_2_3, Archer_1_2_1, Archer_1_2_2, Archer_1_2_3);
+                        txEnd();
+                    //}
+                    Sleep(100);
+                    *MapMove = 0;
+                }
+            }
+        }
+        
+        if(NewGame.IsClicked(*Layout))
+        {
+            if(*BackgroundX1 == 1290)
+            {
+                txSetFillColor(RGB(0, 0, 0));
+                txSetColor(RGB(0, 0, 0));
+                txClear();
+                *BackgroundX1 = 1296; 
+                *BackgroundX2 = 2592;
+                Sleep(500);
+                *Layout = 1;
+                *MenuStage = 1;
+                txSetFillColor(RGB(255, 255, 255));
+                txSetColor(RGB(255, 255, 255));
+            }
+        }
+
+        if(GetAsyncKeyState('Q'))
+        {
+            printf("%i", *Layout);
+        }
     }
 
     
