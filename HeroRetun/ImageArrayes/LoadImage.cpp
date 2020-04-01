@@ -16,7 +16,7 @@
 
 
     //Настройки
-    const char Path[LEN] = "Resources\\Images\\Objects\\OBJECTS_ThirdHouse";
+    const char Path[LEN] = "Resources\\Images\\Objects\\OBJECTS_FirstHouse2part";
 
 
 
@@ -55,7 +55,7 @@
         txFloodFill(0, 0, FLOODFILLBORDER);
         txBitBlt(txDC(), 0, 0, txGetExtentX(image), txGetExtentY(image), image);
 
-        Save(savePath, image, txGetExtentX(image), txGetExtentY(image)/3);
+        Save(savePath, image, txGetExtentX(image), txGetExtentY(image));
 
         txDeleteDC(image);
         txDisableAutoPause();	

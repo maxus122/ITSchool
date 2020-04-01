@@ -135,7 +135,7 @@
         txEnd();
 //============================================
 
-hrLoad(&act, &houseUpgrade, &treesUpgrade, &vegetablesUpgrade);
+        hrLoad(&act, &houseUpgrade, &treesUpgrade, &vegetablesUpgrade);
 
 //===========[ Цикл игры ]============
         while(TRUE)
