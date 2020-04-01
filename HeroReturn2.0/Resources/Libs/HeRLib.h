@@ -39,7 +39,10 @@
                             return false;
                         }
                     }
+                }else{
+                    return false;
                 }
+                
             }
     };
 
@@ -303,21 +306,19 @@
         txDeleteDC(image);
         delete []str2char;
 
-        
-
         txClear();
         txEnd();
         return pixelsArray;
     }
 
-    void hrDrawingImage(int xDest, int yDest, int width, int height, int xSource, int ySource, COLORREF **pixelsArray)
+    void hrDrawingImage(HDC GrapicEngine, int xDest, int yDest, int width, int height, int xSource, int ySource, COLORREF **pixelsArray)
     {
         txBegin();
         for(int y = 0; y < height; y++)
         {
             for(int x = 0; x < width; x++)
             {
-                txSetPixel(x+xDest, y+yDest, pixelsArray[x+xSource][y+ySource]);
+                txSetPixel(x+xDest, y+yDest, pixelsArray[x+xSource][y+ySource], GrapicEngine);
             }
         }
         txEnd();
@@ -335,7 +336,7 @@
 
 
     void hrPainting(
-        int Layout, int Act, int HouseUpgrade, int TreesUpgrade, 
+        HDC GrapicEngine, int Layout, int Act, int HouseUpgrade, int TreesUpgrade, 
         int VegetablesUpgrade, int HouseUpgradeSelect, 
         int BackgroundX1, int BackgroundX2, int MenuStage, int MapMove, int *BlacksmithFrame,
         hrCollector *collectorArray, hrWoodcutter *woodcutterArray, hrArcher *archerArray, 
@@ -370,16 +371,16 @@
         COLORREF **Archer_1_2_3)
     {
         txSetFillColor(TX_WHITE);
-        txClear();
+        txClear(txDC());
         if(Layout == 0)
         {
-            hrDrawingImage(0, 0, 1296, 720, BackgroundX1, 0, BACKGROUND_MainMenu);
+            hrDrawingImage(GrapicEngine, 0, 0, 1296, 720, BackgroundX1, 0, BACKGROUND_MainMenu);
             //txBitBlt(txDC(), 0, 0, BackgroundX2, 720, BACKGROUNDMainMenu, BackgroundX1, 0);
         }
 
         if(Layout == 1)
         {
-            hrDrawingImage(0, 0, 1296, 720, BackgroundX1, 0, BACKGROUND_Menu);
+            hrDrawingImage(GrapicEngine, 0, 0, 1296, 720, BackgroundX1, 0, BACKGROUND_Menu);
 
             /*if(MapMove != 1)
             {
@@ -698,11 +699,13 @@
                     }
                 }
             }
+        
         }*/
+        txBitBlt(txDC(), 0, 0, 1296, 720, GrapicEngine);
     }
 
      void hrKeyboardControls(
-        int *Layout, int *Act, int *HouseUpgrade, int *TreesUpgrade, int *VegetablesUpgrade, int *HouseUpgradeSelect, 
+        HDC GrapicEngine, int *Layout, int *Act, int *HouseUpgrade, int *TreesUpgrade, int *VegetablesUpgrade, int *HouseUpgradeSelect, 
         int *BackgroundX1, int *BackgroundX2, int *MenuStage, int *MapMove, int *BlacksmithFrame, hrCollector *collectorArray,
         hrWoodcutter *woodcutterArray, hrArcher *archerArray, hrVegetables *vegetablesArray, hrTrees *treesArray, 
         
@@ -756,7 +759,7 @@
                         *BackgroundX2 = *BackgroundX2+1296;
 
                         txBegin();
-                        hrPainting(*Layout, *Act, *HouseUpgrade, *TreesUpgrade, *VegetablesUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, BlacksmithFrame, collectorArray, woodcutterArray, archerArray, vegetablesArray, treesArray, BACKGROUND_MainMenu, BACKGROUND_Menu, BACKGROUND_Smithy, BACKGROUND_Upgrade_FirstLvl, BACKGROUND_Upgrade_SecondLvl, BACKGROUND_Upgrade_ThirdLvl, BACKGROUND_Map, BACKGROUND_Game, UI_Cloud_Act1, UI_Cloud_Act2, UI_Cloud_Act3, UI_Cloud_Act4, UI_Menu, UI_Smithy_Buying, UI_Smithy_SelectUpgrade, UI_Upgrade_Buying, BTN_FirstAct_Action, BTN_FourthAndFifthAct_Action, BTN_Left,  BTN_Map, BTN_Right, BTN_SecondAct_Action, BTN_Smithy, BTN_ThirdAct_Action, BTN_Upgrade, BTN_V, BTN_X, OBJECTS_Blacksmith1, OBJECTS_Blacksmith2, OBJECTS_Blacksmith3, OBJECTS_Blacksmith4, OBJECTS_FirstHouse, OBJECTS_SecondHouse, OBJECTS_ThirdHouse, OBJECTS_Tree_1_1, OBJECTS_Tree_1_2, OBJECTS_Tree_1_3, OBJECTS_Tree_2_1, OBJECTS_Tree_2_2, OBJECTS_Tree_2_3, OBJECTS_Tree_3_1, OBJECTS_Tree_3_2, OBJECTS_Tree_3_3, OBJECTS_Vegetable_1_1, OBJECTS_Vegetable_1_2, OBJECTS_Vegetable_1_3, OBJECTS_Vegetable_1_4, OBJECTS_Vegetable_2_1, OBJECTS_Vegetable_2_2, OBJECTS_Vegetable_2_3, OBJECTS_Vegetable_2_4, OBJECTS_Vegetable_3_1, OBJECTS_Vegetable_3_2, OBJECTS_Vegetable_3_3, OBJECTS_Vegetable_3_4, Collector_0_1_1, Collector_0_1_2, Collector_0_1_3, Collector_1_1_1, Collector_1_1_2, Collector_1_1_3, Collector_0_2_1, Collector_0_2_2, Collector_0_2_3, Collector_1_2_1, Collector_1_2_2, Collector_1_2_3, Woodcutter_0_1_1, Woodcutter_0_1_2, Woodcutter_0_1_3, Woodcutter_1_1_1, Woodcutter_1_1_2, Woodcutter_1_1_3, Woodcutter_0_2_1, Woodcutter_0_2_2, Woodcutter_0_2_3, Woodcutter_1_2_1, Woodcutter_1_2_2, Woodcutter_1_2_3, Archer_0_1_1, Archer_0_1_2, Archer_0_1_3, Archer_1_1_1, Archer_1_1_2, Archer_1_1_3, Archer_0_2_1, Archer_0_2_2,  Archer_0_2_3, Archer_1_2_1, Archer_1_2_2, Archer_1_2_3);
+                        hrPainting(GrapicEngine, *Layout, *Act, *HouseUpgrade, *TreesUpgrade, *VegetablesUpgrade, *HouseUpgradeSelect, *BackgroundX1, *BackgroundX2, *MenuStage, *MapMove, BlacksmithFrame, collectorArray, woodcutterArray, archerArray, vegetablesArray, treesArray, BACKGROUND_MainMenu, BACKGROUND_Menu, BACKGROUND_Smithy, BACKGROUND_Upgrade_FirstLvl, BACKGROUND_Upgrade_SecondLvl, BACKGROUND_Upgrade_ThirdLvl, BACKGROUND_Map, BACKGROUND_Game, UI_Cloud_Act1, UI_Cloud_Act2, UI_Cloud_Act3, UI_Cloud_Act4, UI_Menu, UI_Smithy_Buying, UI_Smithy_SelectUpgrade, UI_Upgrade_Buying, BTN_FirstAct_Action, BTN_FourthAndFifthAct_Action, BTN_Left,  BTN_Map, BTN_Right, BTN_SecondAct_Action, BTN_Smithy, BTN_ThirdAct_Action, BTN_Upgrade, BTN_V, BTN_X, OBJECTS_Blacksmith1, OBJECTS_Blacksmith2, OBJECTS_Blacksmith3, OBJECTS_Blacksmith4, OBJECTS_FirstHouse, OBJECTS_SecondHouse, OBJECTS_ThirdHouse, OBJECTS_Tree_1_1, OBJECTS_Tree_1_2, OBJECTS_Tree_1_3, OBJECTS_Tree_2_1, OBJECTS_Tree_2_2, OBJECTS_Tree_2_3, OBJECTS_Tree_3_1, OBJECTS_Tree_3_2, OBJECTS_Tree_3_3, OBJECTS_Vegetable_1_1, OBJECTS_Vegetable_1_2, OBJECTS_Vegetable_1_3, OBJECTS_Vegetable_1_4, OBJECTS_Vegetable_2_1, OBJECTS_Vegetable_2_2, OBJECTS_Vegetable_2_3, OBJECTS_Vegetable_2_4, OBJECTS_Vegetable_3_1, OBJECTS_Vegetable_3_2, OBJECTS_Vegetable_3_3, OBJECTS_Vegetable_3_4, Collector_0_1_1, Collector_0_1_2, Collector_0_1_3, Collector_1_1_1, Collector_1_1_2, Collector_1_1_3, Collector_0_2_1, Collector_0_2_2, Collector_0_2_3, Collector_1_2_1, Collector_1_2_2, Collector_1_2_3, Woodcutter_0_1_1, Woodcutter_0_1_2, Woodcutter_0_1_3, Woodcutter_1_1_1, Woodcutter_1_1_2, Woodcutter_1_1_3, Woodcutter_0_2_1, Woodcutter_0_2_2, Woodcutter_0_2_3, Woodcutter_1_2_1, Woodcutter_1_2_2, Woodcutter_1_2_3, Archer_0_1_1, Archer_0_1_2, Archer_0_1_3, Archer_1_1_1, Archer_1_1_2, Archer_1_1_3, Archer_0_2_1, Archer_0_2_2,  Archer_0_2_3, Archer_1_2_1, Archer_1_2_2, Archer_1_2_3);
                         txEnd();
                     //}
                     Sleep(100);
