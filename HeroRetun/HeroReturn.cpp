@@ -8,7 +8,7 @@
         txCreateWindow(1296, 720);
         txSetFillColor(TX_WHITE);
         txFloodFill(0, 0, FLOODFILLBORDER);
-        txTextCursor (true);
+        txTextCursor(FALSE);
 //============================================
 
 //===============[ Переменные ]===============
@@ -17,6 +17,7 @@
         int houseUpgrade = 0; 
         int treesUpgrade = 1;
         int vegetablesUpgrade = 1;
+        int smithyUpgradeSelect = 11;
         int houseUpgradeSelect = 1;
         int backgroundX1 = 0;
         int backgroundX2 = 1296;
@@ -60,13 +61,14 @@
         hrButton smithyUpgrade31(414, 311, 509, 406, 2);
         hrButton smithyUpgrade32(533, 311, 628, 406, 2);
         hrButton smithyUpgrade33(652, 311, 747, 406, 2);
-        hrButton smithyUpgrade41(414, 432, 509, 406, 2);
-        hrButton smithyUpgrade42(533, 432, 628, 406, 2);
-        hrButton smithyUpgrade43(652, 432, 747, 406, 2);
-        hrButton smithyUpgrade51(414, 432, 509, 406, 2);
-        hrButton smithyUpgrade52(533, 432, 628, 406, 2);
-        hrButton smithyUpgrade53(652, 432, 747, 406, 2);
-        hrButton smithyBack(944, 625, 1050, 657, 2);
+        hrButton smithyUpgrade41(414, 432, 509, 527, 2);
+        hrButton smithyUpgrade42(533, 432, 628, 527, 2);
+        hrButton smithyUpgrade43(652, 432, 747, 527, 2);
+        hrButton smithyUpgrade51(414, 553, 509, 648, 2);
+        hrButton smithyUpgrade52(533, 553, 628, 648, 2);
+        hrButton smithyUpgrade53(652, 553, 747, 648, 2);
+        hrButton smithyBuy(938, 597, 1056, 631, 2);
+        hrButton smithyBack(944, 638, 1050, 670, 2);
 
 
         hrButton upgr(431, 557, 646, 611, 3);
@@ -117,6 +119,12 @@
         HDC btnMap = txLoadImage("Resources\\Images\\UI\\Buttons\\BTN_Map.bmp");
 
         HDC uiSmithyBuying = txLoadImage("Resources\\Images\\UI\\UI_Smithy_Buying.bmp");
+        HDC uiSmithyUpgrade11 = txLoadImage("Resources\\Images\\UI\\UI_Smithy_11.bmp");
+        HDC uiSmithyUpgrade12 = txLoadImage("Resources\\Images\\UI\\UI_Smithy_12.bmp");
+        HDC uiSmithyUpgrade13 = txLoadImage("Resources\\Images\\UI\\UI_Smithy_13.bmp");
+        HDC uiSmithyUpgrade21 = txLoadImage("Resources\\Images\\UI\\UI_Smithy_21.bmp");
+        HDC uiSmithyUpgrade22 = txLoadImage("Resources\\Images\\UI\\UI_Smithy_22.bmp");
+        HDC uiSmithyUpgrade23 = txLoadImage("Resources\\Images\\UI\\UI_Smithy_23.bmp");
         HDC uiSmithySelectUpgrade = txLoadImage("Resources\\Images\\UI\\UI_Smithy_SelectUpgrade.bmp");
 
         HDC uiUpgradeBuying = txLoadImage("Resources\\Images\\UI\\UI_Upgrade_Buying.bmp");
@@ -142,13 +150,104 @@
         {
             time++;
             txBegin();
-                painting(layout, act, houseUpgrade, treesUpgrade, vegetablesUpgrade, houseUpgradeSelect, backgroundX1, backgroundX2, menuStage, mapMove, &blacksmithFrame, collectorArray, woodcutterArray, archerArray, vegetablesArray, treesArray, backgroundMainMenu, backgroundMenu, backgroundSmithy, backgroundUpgradeFirstLvl, backgroundUpgradeSecondLvl, backgroundUpgradeThirdLvl, backgroundMap, backgroundGame, uiMenu, btnLeft, btnRight, btnSmithy, btnUpgrade, btnMap, uiSmithyBuying, uiSmithySelectUpgrade, uiUpgradeBuying, uiCloudAct1, uiCloudAct2, uiCloudAct3, uiCloudAct4, btnV, btnX, btnFirstActAction, btnSecondActAction, btnThirdActAction, btnFourthAndFifthActAction);
+                painting(layout, act, houseUpgrade, treesUpgrade, vegetablesUpgrade, smithyUpgradeSelect, houseUpgradeSelect, backgroundX1, backgroundX2, menuStage, mapMove, &blacksmithFrame, collectorArray, woodcutterArray, archerArray, vegetablesArray, treesArray, backgroundMainMenu, backgroundMenu, backgroundSmithy, backgroundUpgradeFirstLvl, backgroundUpgradeSecondLvl, backgroundUpgradeThirdLvl, backgroundMap, backgroundGame, uiMenu, btnLeft, btnRight, btnSmithy, btnUpgrade, btnMap, uiSmithyBuying, uiSmithySelectUpgrade, uiSmithyUpgrade11, uiSmithyUpgrade12, uiSmithyUpgrade13, uiSmithyUpgrade21, uiSmithyUpgrade22, uiSmithyUpgrade23, uiUpgradeBuying, uiCloudAct1, uiCloudAct2, uiCloudAct3, uiCloudAct4, btnV, btnX, btnFirstActAction, btnSecondActAction, btnThirdActAction, btnFourthAndFifthActAction);
             txEnd();
 
             if(mapMove == 0)
             {
-                keyboardControls(&layout, &act, &houseUpgrade, &treesUpgrade, &vegetablesUpgrade, &houseUpgradeSelect, &backgroundX1, &backgroundX2, &menuStage, &mapMove, &blacksmithFrame, collectorArray, woodcutterArray, archerArray, vegetablesArray, treesArray, newGame, left, right, smithy, upgrade, map, smithyUpgrade11, smithyUpgrade12, smithyUpgrade13, smithyUpgrade21, smithyUpgrade22, smithyUpgrade23, smithyUpgrade31, smithyUpgrade32, smithyUpgrade33, smithyUpgrade41, smithyUpgrade42, smithyUpgrade43, smithyUpgrade51, smithyUpgrade52, smithyUpgrade53, smithyBack, upgr, upgradeFirstLvl, upgradeSecondLvl, upgradeThirdLvl, upgradeBack, vFirstAct, xFirstAct, vSecondAct, xSecondAct, vThirdAct, xThirdAct, vFourthAct, xFourthAct, vFifthAct, xFifthAct, mapBack, gameFirstAction, gameSecondAction, gameThirdAction, gameFourthAction, gameFifthAction, gameSixthAction, backgroundMainMenu, backgroundMenu, backgroundSmithy, backgroundUpgradeFirstLvl, backgroundUpgradeSecondLvl, backgroundUpgradeThirdLvl, backgroundMap, backgroundGame, uiMenu, btnLeft, btnRight, btnSmithy, btnUpgrade, btnMap, uiSmithyBuying, uiSmithySelectUpgrade, uiUpgradeBuying, uiCloudAct1, uiCloudAct2, uiCloudAct3, uiCloudAct4, btnV, btnX, btnFirstActAction, btnSecondActAction, btnThirdActAction, btnFourthAndFifthActAction);
+                keyboardControls(&layout, &act, &houseUpgrade, &treesUpgrade, &vegetablesUpgrade, &smithyUpgradeSelect, &houseUpgradeSelect, &backgroundX1, &backgroundX2, &menuStage, &mapMove, &blacksmithFrame, collectorArray, woodcutterArray, archerArray, vegetablesArray, treesArray, newGame, left, right, smithy, upgrade, map, smithyUpgrade11, smithyUpgrade12, smithyUpgrade13, smithyUpgrade21, smithyUpgrade22, smithyUpgrade23, smithyUpgrade31, smithyUpgrade32, smithyUpgrade33, smithyUpgrade41, smithyUpgrade42, smithyUpgrade43, smithyUpgrade51, smithyUpgrade52, smithyUpgrade53, smithyBuy, smithyBack, upgr, upgradeFirstLvl, upgradeSecondLvl, upgradeThirdLvl, upgradeBack, vFirstAct, xFirstAct, vSecondAct, xSecondAct, vThirdAct, xThirdAct, vFourthAct, xFourthAct, vFifthAct, xFifthAct, mapBack, gameFirstAction, gameSecondAction, gameThirdAction, gameFourthAction, gameFifthAction, gameSixthAction, backgroundMainMenu, backgroundMenu, backgroundSmithy, backgroundUpgradeFirstLvl, backgroundUpgradeSecondLvl, backgroundUpgradeThirdLvl, backgroundMap, backgroundGame, uiMenu, btnLeft, btnRight, btnSmithy, btnUpgrade, btnMap, uiSmithyBuying, uiSmithySelectUpgrade, uiSmithyUpgrade11, uiSmithyUpgrade12, uiSmithyUpgrade13, uiSmithyUpgrade21, uiSmithyUpgrade22, uiSmithyUpgrade23, uiUpgradeBuying, uiCloudAct1, uiCloudAct2, uiCloudAct3, uiCloudAct4, btnV, btnX, btnFirstActAction, btnSecondActAction, btnThirdActAction, btnFourthAndFifthActAction);
             }
+
+            
+            for(int i = 0; i<6; i++)
+            {
+                if(layout == 5)
+                {
+                    if(time%5 == 0)
+                    {
+                        if(collectorArray[i].GetState() == 1)
+                        {
+                            for(int i2 = 0; i2 < 6; i2++)
+                            {
+                                if(vegetablesArray[i2].GetFrame() == 4)
+                                {
+                                    if(!vegetablesArray[i2].IsCollect())
+                                    {
+                                        if(collectorArray[i].Collect() == 1)
+                                        {
+                                            collectorArray[i].SetAnimation(2);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            for(int i = 0; i<6; i++)
+            {
+                if(layout == 5)
+                {
+                    if(time%3 == 0)
+                    {
+                        if(collectorArray[i].GetState())
+                        {
+                            if(collectorArray[i].GetAnimation() != 2)
+                            {
+                                collectorArray[i].Frames(collectorArray[i].GetFrame());
+                                collectorArray[i].SetCoordinate(collectorArray[i].GetX()+7, 194);
+                            }
+                        }
+                    }
+                }
+            }
+
+            for(int i = 0; i<3; i++)
+            {
+                if(layout == 5)
+                {
+                    if(time%5 == 0)
+                    {
+                        if(woodcutterArray[i].GetState())
+                        {
+                            woodcutterArray[i].Frames(woodcutterArray[i].GetFrame());
+                            woodcutterArray[i].SetCoordinate(woodcutterArray[i].GetX()+7, 194);
+                            Sleep(1);
+                        }
+                    }
+                }
+            }
+
+            for(int i = 0; i<3; i++)
+            {
+                if(layout == 5)
+                {
+                    if(time%5 == 0)
+                    {
+                        if(archerArray[i].GetState())
+                        {
+                            archerArray[i].Frames(archerArray[i].GetFrame());
+                            archerArray[i].SetCoordinate(archerArray[i].GetX()+7, 530);
+                        }
+                    }
+                }
+            }
+            
+            if(layout == 5)
+            {
+                if(time%20 == 0)
+                {
+                    for(int i = 0; i<6; i++)
+                    {
+                        if(rand()%3+1 == 1)
+                        {
+                            vegetablesArray[i].Frames(vegetablesArray[i].GetFrame());
+                        }
+                    }
+                }
+            }
+            
         }
     }
 //====================================

@@ -1,0 +1,224 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe, файл: TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x004FE2F4 (32-bit), Flags: CMdrE0, Thread: 0x2D88 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00412E6E in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: (anonymous namespace)::TX::txSetPixel()
+# 1 0x0041D025 in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Apr 13 2020 19:29:26, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Apr 13 2020 19:29:33
+
+Run file:	d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe
+Directory:	d:\ItSchoolRep\ITSchool\Graphs
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe, файл: TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x004FE2F4 (32-bit), Flags: CMdRE0, Thread: 0x2B8C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00412E6E in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: (anonymous namespace)::TX::txSetPixel()
+# 1 0x0041D025 in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Apr 13 2020 19:30:04, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Apr 13 2020 19:30:15
+
+Run file:	d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe
+Directory:	d:\ItSchoolRep\ITSchool\Graphs
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe, файл: TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x004FE2F4 (32-bit), Flags: CMdrE0, Thread: 0x257C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00412E6E in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: (anonymous namespace)::TX::txSetPixel()
+# 1 0x0041D025 in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Apr 13 2020 19:30:44, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Apr 13 2020 19:30:55
+
+Run file:	d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe
+Directory:	d:\ItSchoolRep\ITSchool\Graphs
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe, файл: TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x004FE2F4 (32-bit), Flags: CMdrE0, Thread: 0x23A8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00412E6E in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: (anonymous namespace)::TX::txSetPixel()
+# 1 0x0041D02F in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Apr 13 2020 20:01:40, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Apr 13 2020 20:01:47
+
+Run file:	d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe
+Directory:	d:\ItSchoolRep\ITSchool\Graphs
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe, файл: TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x004FE2F4 (32-bit), Flags: CMdrE0, Thread: 0x7F0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00412E6E in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: (anonymous namespace)::TX::txSetPixel()
+# 1 0x0041D031 in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Apr 13 2020 20:04:29, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Apr 13 2020 20:04:35
+
+Run file:	d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe
+Directory:	d:\ItSchoolRep\ITSchool\Graphs
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe, файл: TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x004FE2F4 (32-bit), Flags: CMdrE0, Thread: 0x103C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00412E6E in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: (anonymous namespace)::TX::txSetPixel()
+# 1 0x0041D031 in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Apr 13 2020 20:04:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Apr 13 2020 20:05:02
+
+Run file:	d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe
+Directory:	d:\ItSchoolRep\ITSchool\Graphs
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe, файл: TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x004FE2F4 (32-bit), Flags: CMdrE0, Thread: 0x175C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00412E6E in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: (anonymous namespace)::TX::txSetPixel()
+# 1 0x0041D039 in d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Apr 13 2020 20:07:46, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Apr 13 2020 20:07:53
+
+Run file:	d:\ItSchoolRep\ITSchool\Graphs\Graphs.exe
+Directory:	d:\ItSchoolRep\ITSchool\Graphs
+
+--------------------------------------------------
