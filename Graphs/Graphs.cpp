@@ -2,13 +2,20 @@
     
     int main()
     {
-        txCreateWindow(1296, 720);
+        txCreateWindow(1280, 720);
         txSetFillColor(TX_WHITE);
         txFloodFill(0, 0, FLOODFILLBORDER);
         txTextCursor(FALSE);
 
-        for(double x = 0; x<1296; x = x+0.0001)
+        txBegin();
+        for(double x = 640; x<1280; x = x+0.0001)
         {
-            txSetPixel(x+648, (Parabola(x)-720)*(-1), TX_BLACK);
+            txSetPixel(x, (Parabola(x-639)-720)*(-1), TX_BLACK);
         }
+
+        for(double x = 640; x>0; x = x-0.001)
+        {
+            txSetPixel(x, (Parabola(x-641)-720)*(-1), TX_BLACK);
+        }
+        txEnd();
     }
