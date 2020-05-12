@@ -9,7 +9,7 @@
             txSetFillColor (TX_WHITE);
             txFloodFill(0, 0, FLOODFILLBORDER);
 
-            int scale=2;
+            int scale=1;
             int x=100;
             int y=250;
 

@@ -16,7 +16,7 @@
 
 
     //Настройки
-    const char Path[LEN] = "Resources\\Images\\Objects\\OBJECTS_FirstHouse2part";
+    const char Path[100] = "Resources\\Images\\Lift\\Lift_41";
 
 
 
@@ -40,8 +40,8 @@
     
     int main()
     {
-        char imagePath[LEN];
-        char savePath[LEN];
+        char imagePath[1000];
+        char savePath[1000];
 
         strcpy(imagePath, Path);
         strcat(imagePath, ".bmp");
@@ -70,29 +70,23 @@
             pixelsArray[i] = new COLORREF[height];
         }
 
-        for(int i = 0; i<width; i++)
-        {
-            for(int j=0; j<height; j++)
-            {
-                pixelsArray[i][j] = txGetPixel(i, j, image);
-            }
-        }
-
         FILE *Arr;
         Arr = fopen(savePath, "w+");
 
         int R, G, B;
-        char RText[LEN];
-        char GText[LEN];
-        char BText[LEN];
+        char RText[100];
+        char GText[100];
+        char BText[100];
         char fileText[345000];
 
         strcpy(fileText, "{");
 
         for(int i = 0; i<width; i++)
         {
-            for(int j=0; j<height; j++)
+            for(int j = 0; j<height; j++)
             {
+                pixelsArray[i][j] = txGetPixel(i, j, image);
+
                 R = GetRValue(pixelsArray[i][j]);
                 G = GetGValue(pixelsArray[i][j]);
                 B = GetBValue(pixelsArray[i][j]);

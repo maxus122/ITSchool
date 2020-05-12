@@ -1,0 +1,31 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\DVD.exe, файл: TXLib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044670C (32-bit), Flags: CMdrE0, Thread: 0x270C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	May  9 2020 00:41:30, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	May 09 2020 00:41:33
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\DVD.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------

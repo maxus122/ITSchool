@@ -1,0 +1,1333 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12141, функция: bool {anonymous}::TX::txLine(double, double, double, double, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044670C (32-bit), Flags: CMdRE0, Thread: 0x29D8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 23 2020 05:23:09, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 23 2020 05:23:12
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12141, функция: bool {anonymous}::TX::txLine(double, double, double, double, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044670C (32-bit), Flags: CMdRE0, Thread: 0x2598 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 23 2020 05:24:25, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 23 2020 05:24:28
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044670C (32-bit), Flags: CMdRE0, Thread: 0x206C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 23 2020 05:24:48, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 23 2020 05:24:51
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x2D80 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:20:27, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:20:30
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x1A04 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:21:05, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:21:08
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x2FE8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:21:23, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:21:26
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x2DD4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:21:46, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:21:49
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x2958 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:22:19, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:22:22
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x330 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:22:39, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:22:41
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12610, функция: bool {anonymous}::TX::txAlphaBlend(HDC, double, double, double, double, HDC, double, double, double),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 1280, 720} не полностью лежит внутри изображения-источника {0, 0, 155, 32}, функция txAlphaBlend() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRe0, Thread: 0x1378 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:23:47, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:23:49
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x292C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:24:14, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:24:16
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x1CE4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:25:36, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:25:38
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x2E68 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:28:03, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:28:06
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x2208 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:28:42, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:28:44
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0xDF8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:29:14, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:29:16
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x14A8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:33:30, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:33:33
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x2D94 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:34:33, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:34:35
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x290C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:34:55, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:34:57
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x1B14 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:35:12, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:35:14
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x1D5C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:35:23, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:35:26
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x2CDC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:36:17, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:36:20
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x2DEC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:36:42, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:36:45
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x1EC8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:37:06, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:37:08
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12100, функция: bool {anonymous}::TX::txClear(HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044770C (32-bit), Flags: CMdRE0, Thread: 0x2F78 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:37:19, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:37:22
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x2F78 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:38:45, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:38:47
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x2E14 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:46:22, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:46:25
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x1D80 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:47:19, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:47:22
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x18F4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:47:47, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:47:50
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x2DD8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 15:58:07, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 15:58:10
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12277, функция: bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC),
+
+Сообщение: Параметр y0 = 678 больше, чем y1 = 231. Текст выводиться не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRe0, Thread: 0x31BC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 16:00:08, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 16:00:11
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0xA48 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 16:00:40, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 16:00:43
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x29AC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 16:01:23, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 16:01:26
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12100, функция: bool {anonymous}::TX::txClear(HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x14BC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 16:02:22, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 16:02:25
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x2B9C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 16:02:35, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 16:02:37
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x327C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 16:03:42, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 16:03:44
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x28C8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 16:04:04, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 16:04:06
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x3364 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 16:04:40, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 16:04:42
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12100, функция: bool {anonymous}::TX::txClear(HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x2754 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 16:04:59, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 16:05:02
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x504 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 16:05:19, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 16:05:21
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x1510 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 16:05:31, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 16:05:34
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x2A30 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 16:07:00, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 16:07:03
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x30C4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 21:21:31, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 28 2020 21:21:34
+
+Run file:	e:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	e:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe, файл: TXlib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044870C (32-bit), Flags: CMdRE0, Thread: 0x2258 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXlib.h
+Compiled:	Apr 28 2020 21:21:31, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Apr 30 2020 23:22:55
+
+Run file:	E:\ItSchoolRep\ITSchool\BasicProject\Elevator.exe
+Directory:	E:\ItSchoolRep\ITSchool\BasicProject
+
+--------------------------------------------------
