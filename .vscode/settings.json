@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "type_traits": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "array": "cpp",
+        "sstream": "cpp"
     }
 }
