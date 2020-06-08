@@ -19443,3 +19443,34 @@ Run file:	e:\ItSchoolRep\ITSchool\Graphs2\Graphs.exe
 Directory:	e:\ItSchoolRep\ITSchool\Graphs2
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\Graphs2\Graphs.exe, файл: Resources\\Libs\\TXLib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044D70C (32-bit), Flags: CMdRE0, Thread: 0x3170 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	May 27 2020 04:19:54, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	May 27 2020 04:19:57
+
+Run file:	e:\ItSchoolRep\ITSchool\Graphs2\Graphs.exe
+Directory:	e:\ItSchoolRep\ITSchool\Graphs2
+
+--------------------------------------------------
