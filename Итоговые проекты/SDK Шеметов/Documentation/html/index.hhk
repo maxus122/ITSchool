@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___xD0_x9E_xD1_x82_xD1_x80_xD0_xB8_xD1_x81_xD0_xBE_xD0_xB2_xD0_xBA_xD0_xB0.html#gabdc7af1667639fbca55348ebae603214"><param name="Name" value="drawAircraft"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___xD0_x9E_xD1_x82_xD1_x80_xD0_xB8_xD1_x81_xD0_xBE_xD0_xB2_xD0_xBA_xD0_xB0.html#ga749d718b6b3e2031a10097c3ee6a3214"><param name="Name" value="drawAirport"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___xD0_x9E_xD1_x82_xD1_x80_xD0_xB8_xD1_x81_xD0_xBE_xD0_xB2_xD0_xBA_xD0_xB0.html#ga89e47d267ef84871923361c09876c8c9"><param name="Name" value="drawAnimateClick"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___xD0_x9E_xD1_x82_xD1_x80_xD0_xB8_xD1_x81_xD0_xBE_xD0_xB2_xD0_xBA_xD0_xB0.html#ga08d28c24dc14b211efb2f78b7fce37e4"><param name="Name" value="drawGameOverScreen"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___xD0_x9E_xD1_x82_xD1_x80_xD0_xB8_xD1_x81_xD0_xBE_xD0_xB2_xD0_xBA_xD0_xB0.html#gab1c1ea7706301c6944e38fb1161120ad"><param name="Name" value="drawLineRadar"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___xD0_x9E_xD1_x82_xD1_x80_xD0_xB8_xD1_x81_xD0_xBE_xD0_xB2_xD0_xBA_xD0_xB0.html#ga164450f08ee933f4883953f909aef16c"><param name="Name" value="drawMenuScreen"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___xD0_x9E_xD1_x82_xD1_x80_xD0_xB8_xD1_x81_xD0_xBE_xD0_xB2_xD0_xBA_xD0_xB0.html#gaea205de64b7a5fc6a05dbb914ed1752a"><param name="Name" value="drawRadar"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___xD0_x9E_xD1_x82_xD1_x80_xD0_xB8_xD1_x81_xD0_xBE_xD0_xB2_xD0_xBA_xD0_xB0.html#gabe92ba1571e809d6ffd989fae040da17"><param name="Name" value="drawTableAirControl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___xD0_x9E_xD1_x82_xD1_x80_xD0_xB8_xD1_x81_xD0_xBE_xD0_xB2_xD0_xBA_xD0_xB0.html#ga1d683548c11a226eb49eeee21efa2580"><param name="Name" value="drawTableUpgradeAirport"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html"><param name="Name" value="graphic.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html#gabdc7af1667639fbca55348ebae603214"><param name="Name" value="drawAircraft"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html"><param name="Name" value="graphic.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html#ga749d718b6b3e2031a10097c3ee6a3214"><param name="Name" value="drawAirport"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html"><param name="Name" value="graphic.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html#ga89e47d267ef84871923361c09876c8c9"><param name="Name" value="drawAnimateClick"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html"><param name="Name" value="graphic.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html#ga08d28c24dc14b211efb2f78b7fce37e4"><param name="Name" value="drawGameOverScreen"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html"><param name="Name" value="graphic.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html#gab1c1ea7706301c6944e38fb1161120ad"><param name="Name" value="drawLineRadar"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html"><param name="Name" value="graphic.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html#ga164450f08ee933f4883953f909aef16c"><param name="Name" value="drawMenuScreen"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html"><param name="Name" value="graphic.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html#gaea205de64b7a5fc6a05dbb914ed1752a"><param name="Name" value="drawRadar"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html"><param name="Name" value="graphic.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html#gabe92ba1571e809d6ffd989fae040da17"><param name="Name" value="drawTableAirControl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="graphic_8h.html#ga1d683548c11a226eb49eeee21efa2580"><param name="Name" value="graphic.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___xD0_x9E_xD1_x82_xD1_x80_xD0_xB8_xD1_x81_xD0_xBE_xD0_xB2_xD0_xBA_xD0_xB0.html"><param name="Name" value="Отрисовка"></OBJECT>
+</UL>
+</BODY>
+</HTML>

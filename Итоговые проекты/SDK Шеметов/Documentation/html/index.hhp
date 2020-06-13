@@ -1,0 +1,33 @@
+[OPTIONS]
+Compiled file=gg.chm
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x419 Russian
+Title=Aircontrol Graphic library
+
+[WINDOWS]
+main="Aircontrol Graphic library","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+graphic_8h_source.html
+group___xD0_x9E_xD1_x82_xD1_x80_xD0_xB8_xD1_x81_xD0_xBE_xD0_xB2_xD0_xBA_xD0_xB0.html
+dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html
+index.html
+modules.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png

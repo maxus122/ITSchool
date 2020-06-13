@@ -3,6 +3,7 @@
         "type_traits": "cpp",
         "cmath": "cpp",
         "array": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "random": "cpp"
     }
 }

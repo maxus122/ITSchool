@@ -150,6 +150,7 @@
         while(TRUE)
         {
             time++;
+            txClearConsole();
             txBegin();
                 painting(layout, act, houseUpgrade, treesUpgrade, vegetablesUpgrade, smithyUpgradeSelect, houseUpgradeSelect, backgroundX1, backgroundX2, menuStage, mapMove, &blacksmithFrame, collectorArray, woodcutterArray, knightArray, archerArray, vegetablesArray, treesArray, backgroundMainMenu, backgroundMenu, backgroundSmithy, backgroundUpgradeFirstLvl, backgroundUpgradeSecondLvl, backgroundUpgradeThirdLvl, backgroundMap, backgroundGame, uiMenu, btnLeft, btnRight, btnSmithy, btnUpgrade, btnMap, uiSmithyBuying, uiSmithySelectUpgrade, uiSmithyUpgrade11, uiSmithyUpgrade12, uiSmithyUpgrade13, uiSmithyUpgrade21, uiSmithyUpgrade22, uiSmithyUpgrade23, uiUpgradeBuying, uiCloudAct1, uiCloudAct2, uiCloudAct3, uiCloudAct4, btnV, btnX, btnFirstActAction, btnSecondActAction, btnThirdActAction, btnFourthAndFifthActAction);
             txEnd();
@@ -162,22 +163,22 @@
             
             for(int i = 0; i<6; i++)
             {
-                if(layout == 5)
+                for(int j = 0; j < 6; j++)
                 {
-                    if(time%5 == 0)
+                    if(layout == 5)
                     {
-                        if(collectorArray[i].GetState() == 1)
-                        {
-                            for(int i2 = 0; i2 < 6; i2++)
+                        if(collectorArray[i].GetState())
+                        { 
+                            if(collectorArray[i].InPosition(j, vegetablesUpgrade))
                             {
-                                if(vegetablesArray[i2].GetFrame() == 4)
+                                if(vegetablesArray[j].GetFrame() == 4)
                                 {
-                                    if(!vegetablesArray[i2].IsCollect())
+                                    if(!vegetablesArray[j].IsCollect())
                                     {
-                                        if(collectorArray[i].Collect() == 1)
-                                        {
-                                            collectorArray[i].SetAnimation(2);
-                                        }
+                                        vegetablesArray[j].SetCollecting(1);
+                                        collectorArray[i].SetCollectVegetables(j);
+                                        collectorArray[i].SetAnimation(2);
+                                        collectorArray[i].SetFrame(1);
                                     }
                                 }
                             }
@@ -194,10 +195,43 @@
                     {
                         if(collectorArray[i].GetState())
                         {
-                            if(collectorArray[i].GetAnimation() != 2)
+                            if(collectorArray[i].GetAnimation() == 1)
                             {
-                                collectorArray[i].Frames(collectorArray[i].GetFrame());
-                                collectorArray[i].SetCoordinate(collectorArray[i].GetX()+7, 194);
+                                if(collectorArray[i].GetRotate() == 0)
+                                {
+                                    collectorArray[i].Frames(collectorArray[i].GetFrame());
+                                    collectorArray[i].SetCoordinate(collectorArray[i].GetX()+7, 194);
+                                    if(collectorArray[i].GetX() > 640)
+                                    {
+                                        collectorArray[i].SetRotate(1);
+                                        collectorArray[i].SetAnimation(1);
+                                        collectorArray[i].SetFrame(1);
+                                    }
+                                }
+                                if(collectorArray[i].GetRotate() == 1)
+                                {
+                                    collectorArray[i].Frames(collectorArray[i].GetFrame());
+                                    collectorArray[i].SetCoordinate(collectorArray[i].GetX()-7, 194);
+                                    if(collectorArray[i].GetX() < 0)
+                                    {
+                                        collectorArray[i].SetRotate(1);
+                                        collectorArray[i].SetAnimation(1);
+                                        collectorArray[i].SetFrame(1);
+                                    }
+                                }
+                            }
+                            if(collectorArray[i].GetAnimation() == 2)
+                            {
+                                if(collectorArray[i].GetFrame() != 3)
+                                {
+                                    collectorArray[i].Frames(collectorArray[i].GetFrame());
+                                }else{
+                                    collectorArray[i].SetAnimation(1);
+                                    collectorArray[i].SetFrame(1);
+                                    vegetablesArray[collectorArray[i].GetCollectVegetables()].SetCollecting(0);
+                                    vegetablesArray[collectorArray[i].GetCollectVegetables()].SetFrame(1);
+                                    collectorArray[i].SetCollectVegetables(-1);
+                                }
                             }
                         }
                     }
@@ -244,7 +278,10 @@
                         if(knightArray[i].GetState())
                         {
                             knightArray[i].Frames(knightArray[i].GetFrame());
-                            knightArray[i].SetCoordinate(knightArray[i].GetX()+7, 530);
+                            if(knightArray[i].GetX() < 560-(30*i))
+                            {
+                                knightArray[i].SetCoordinate(knightArray[i].GetX()+7, 510+(20*i));
+                            }
                         }
                     }
                 }

@@ -2975,3 +2975,995 @@ Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
 Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x1F08 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun  9 2020 14:35:49, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 09 2020 14:36:10
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x6E0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun  9 2020 14:43:14, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 09 2020 14:43:35
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x2BC4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun  9 2020 14:44:48, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 09 2020 14:45:09
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x1EE8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun  9 2020 14:54:12, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 09 2020 14:54:33
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0xCDC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun  9 2020 15:23:27, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 09 2020 15:23:48
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x12D8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun  9 2020 15:24:27, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 09 2020 15:24:48
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x1378 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun  9 2020 15:25:46, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 09 2020 15:26:07
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x18FC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun  9 2020 15:27:17, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 09 2020 15:27:38
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x2ADC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun  9 2020 16:09:11, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 09 2020 16:09:32
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x2F7C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun  9 2020 18:24:40, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 09 2020 18:25:01
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x3094 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun  9 2020 18:30:21, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 09 2020 18:30:42
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x18F8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun  9 2020 18:37:16, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 09 2020 18:37:38
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x22C4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun  9 2020 23:15:35, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 09 2020 23:15:56
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x2ACC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 00:03:11, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 00:03:33
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x24F0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 00:04:06, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 00:04:28
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x81C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 00:06:46, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 00:07:07
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x26F0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 00:11:38, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 00:11:59
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x319C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 00:16:15, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 00:16:37
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x64 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 00:25:23, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 00:25:45
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12100, функция: bool {anonymous}::TX::txClear(HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x21D8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 00:46:42, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 00:47:04
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x1A90 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 01:09:55, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 01:10:17
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x2D50 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 01:15:58, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 01:16:20
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x2774 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 01:33:27, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 01:33:48
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x84C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 14:53:59, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 14:54:20
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0x1BC4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 15:46:21, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 15:46:42
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006BE70C (32-bit), Flags: CMdRE0, Thread: 0xBD8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 16:55:09, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 16:55:31
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006C370C (32-bit), Flags: CMdRE0, Thread: 0x2888 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 17:26:04, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 10 2020 17:26:25
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12100, функция: bool {anonymous}::TX::txClear(HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006C370C (32-bit), Flags: CMdRE0, Thread: 0x21F8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 17:26:04, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 11 2020 15:37:54
+
+Run file:	E:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	E:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006C370C (32-bit), Flags: CMdRE0, Thread: 0x1144 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 17:26:04, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 11 2020 16:27:29
+
+Run file:	E:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	E:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x006C370C (32-bit), Flags: CMdRE0, Thread: 0x2BA8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 10 2020 17:26:04, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 11 2020 16:31:22
+
+Run file:	E:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	E:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0066470C (32-bit), Flags: CMdRE0, Thread: 0x2238 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 11 2020 16:34:59, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 11 2020 16:35:18
+
+Run file:	e:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	e:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe, файл: Resources\\Libs\\TXLib.h, строка: 12110, функция: bool {anonymous}::TX::txSetPixel(double, double, COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0066470C (32-bit), Flags: CMdRE0, Thread: 0x2CB8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	Resources\\Libs\\TXLib.h
+Compiled:	Jun 11 2020 16:34:59, GNU g++ 9.2.0, std=201402L, MinGW Runtime 5.3, 32-bit, Debug
+Started:	Jun 11 2020 16:35:40
+
+Run file:	E:\ItSchoolRep\ITSchool\HeroRetun\HeroReturn.exe
+Directory:	E:\ItSchoolRep\ITSchool\HeroRetun
+
+--------------------------------------------------
