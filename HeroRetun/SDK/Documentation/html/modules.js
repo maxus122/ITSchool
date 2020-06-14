@@ -1,6 +1,6 @@
 var modules =
 [
-    [ "Задние фоны", "group___background.html", null ],
     [ "Герои", "group___heroes.html", "group___heroes" ],
-    [ "Объекты", "group___objects.html", "group___objects" ]
+    [ "Объекты", "group___objects.html", "group___objects" ],
+    [ "Разное", "group___others.html", "group___others" ]
 ];
