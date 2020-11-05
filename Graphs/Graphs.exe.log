@@ -13245,3 +13245,17 @@ Run file:	e:\ItSchoolRep\ITSchool\Graphs\Graphs.exe
 Directory:	e:\ItSchoolRep\ITSchool\Graphs
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\ItSchoolRep\ITSchool\Graphs\Graphs.exe, файл: Resources\\Libs\\TXLib.h, строка: 12061, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-03-26 21:07:17 +0400], Instance: 0x0044A70C (32-bit), Flags: CMdRE0, Thread: 0x416C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
